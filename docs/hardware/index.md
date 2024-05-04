@@ -1,11 +1,18 @@
 # Getting Started
 
-OpenDTU supports the ESP32 family of microcontrollers.
+OpenDTU-onBattery supports the ESP32 family of microcontrollers.
 
-Depending on the inverter to be addressed, different RF modules are required. The HM series requires the NRF24L01+ module, while the HMS/HMT series requires the CMT2300A module.
+Depending on the inverter to be addressed, different RF modules are required.   
+- the HM series requires the NRF24L01+ module
+- the HMS/HMT series requires the CMT2300A module
+
 Please see the [inverter overview](inverter_overview.md) to see if your inverter is supported and to determine the required RF module.
 
 For an easy start, use a "NodeMCU32 ESP32 DEVKIT DOIT" or "[ESP32 NodeMCU Development Board](esp32nodemcu_38pin.md)" with an ESP32-S3 or ESP-WROOM-32 chipset on it.
+
+!!! note "Upstream Project"
+
+    Due to the growing size of the code and the memory limitations of the common ESP32 boards (4Mb Flash) on the market today, we expect sometime in the future that ESP32 boards with minimum 8Mb will be necessary to run the OpenDTU-onBattery code. Such boards have the ESP32-S3 and including -N8R, -N16R, -N32R indicating 8MB,16Mb or 32Mb Flash memory respectively.
 
 Sample Picture:
 

@@ -1,6 +1,6 @@
 ---
 title: Web Flasher
-description: Firmware Web Installer for OpenDTU Firmware
+description: Firmware Web Installer for OpenDTU-onBattery Firmware
 ---
 
 <style>
@@ -31,7 +31,7 @@ Flash or Find your device using next options:
 
 1. Plug in your ESP32 to a USB port.
 2. Hit "Install" and select the correct COM port.
-3. Get OpenDTU firmware installed and connected in less than 3 minutes!
+3. Get OpenDTU-onBattery firmware installed and connected in less than 3 minutes!
 
 <p>Select your product</p>
 <ul class="radios">
