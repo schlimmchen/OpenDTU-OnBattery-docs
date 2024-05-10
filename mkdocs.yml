@@ -104,12 +104,11 @@ nav:
       - Troubleshooting: troubleshooting.md
   - Hardware:
       - hardware/index.md
-      - hardware/Hoymiles/inverter_overview.md
+      - hardware/inverter_overview.md
       - ESP32 Modules:
         - hardware/esp32nodemcu_38pin.md
         - hardware/olimexpoeiso.md
-      - ESP32 Versions and Memory:
-        - hardware/ESP32_Versions_and_Memory/ESP32_Versions_and_Memory.md	  
+        - hardware/ESP32_Future_Versions_and_Memory.md
       - RF Modules:
         - hardware/nrf24l01plus.md
         - hardware/cmt2300a.md
