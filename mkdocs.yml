@@ -104,7 +104,8 @@ nav:
       - Troubleshooting: troubleshooting.md
   - Hardware:
       - hardware/index.md
-      - hardware/inverter_overview.md
+	  - hardware/ESP32_Versions_and_Memory/ESP32_Versions_and_Memory.md
+      - hardware/Hoymiles/inverter_overview.md
       - ESP32 Modules:
         - hardware/esp32nodemcu_38pin.md
         - hardware/olimexpoeiso.md
