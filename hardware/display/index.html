@@ -874,15 +874,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lcd-display-pcd8544" class="md-nav__link">
-    <span class="md-ellipsis">
-      LCD Display PCD8544
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#oled-display-ssd1306" class="md-nav__link">
     <span class="md-ellipsis">
       OLED Display SSD1306
@@ -913,6 +904,15 @@
   <a href="#lcd-display-st7567s-gm12864-59n" class="md-nav__link">
     <span class="md-ellipsis">
       LCD Display ST7567S GM12864-59N
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcd-display-pcd8544" class="md-nav__link">
+    <span class="md-ellipsis">
+      LCD Display PCD8544
     </span>
   </a>
   
@@ -2362,15 +2362,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lcd-display-pcd8544" class="md-nav__link">
-    <span class="md-ellipsis">
-      LCD Display PCD8544
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#oled-display-ssd1306" class="md-nav__link">
     <span class="md-ellipsis">
       OLED Display SSD1306
@@ -2401,6 +2392,15 @@
   <a href="#lcd-display-st7567s-gm12864-59n" class="md-nav__link">
     <span class="md-ellipsis">
       LCD Display ST7567S GM12864-59N
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcd-display-pcd8544" class="md-nav__link">
+    <span class="md-ellipsis">
+      LCD Display PCD8544
     </span>
   </a>
   
@@ -2443,27 +2443,16 @@
 
 
 <h1 id="displays">Displays</h1>
-<p>OpenDTU currently supports different types of displays (see below). Currently only displays with a resolution of 128x64 pixel are supported. To activate a display you have to specify it's type and pin assignment either in a device profile. Please see <a href="../../firmware/device_profiles/#implemented-configuration-values">here</a> for value <code>display.type</code> to determine the possible values. (On this page is also a link to several example configurations for different ESP boards)</p>
+<p>OpenDTU-onBattery currently supports different types of displays (see below). Currently only displays with a resolution of 128x64 pixel are supported. To activate a display you have to specify it's type and pin assignment either in a device profile. Please see <a href="../../firmware/device_profiles/#implemented-configuration-values">here</a> for value <code>display.type</code> to determine the possible values. (On this page is also a link to several example configurations for different ESP boards)</p>
 <h2 id="display-settings">Display Settings</h2>
 <p>Display settings can also be found in the <a href="../../firmware/configuration/device_settings/">Device Manager</a>.</p>
 <h2 id="supported-models">Supported Models</h2>
-<h3 id="lcd-display-pcd8544">LCD Display PCD8544</h3>
-<ul>
-<li>Size: 2,7"</li>
-<li>Resolution: 84x48 pixel</li>
-<li>Supported bus: SPI</li>
-<li>
-<p>Type = 1</p>
-<p><a class="glightbox" href="../../assets/images/pcd8544-full.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SH1106" src="../../assets/images/pcd8544-full.jpg" width="300" /></a></p>
-</li>
-</ul>
 <h3 id="oled-display-ssd1306">OLED Display SSD1306</h3>
 <ul>
 <li>Size: 0,96"</li>
 <li>Resolution: 128x64 pixel</li>
-<li>Supported bus: I²C</li>
 <li>
-<p>Type = 2</p>
+<p>Supported bus: I²C</p>
 <p><a class="glightbox" href="../../assets/images/ssd1306-full.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SSD1306" src="../../assets/images/ssd1306-full.jpg" width="300" /></a></p>
 </li>
 </ul>
@@ -2471,9 +2460,8 @@
 <ul>
 <li>Size: 1,3"</li>
 <li>Resolution: 128x64 pixel</li>
-<li>Supported bus: I²C</li>
 <li>
-<p>Type = 3</p>
+<p>Supported bus: I²C</p>
 <p><a class="glightbox" href="../../assets/images/sh1106-full.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SH1106" src="../../assets/images/sh1106-full.png" width="300" /></a></p>
 </li>
 </ul>
@@ -2481,9 +2469,8 @@
 <ul>
 <li>Size: 2,42"</li>
 <li>Resolution: 128x64 pixel</li>
-<li>Supported bus: I²C</li>
 <li>
-<p>Type = 4</p>
+<p>Supported bus: I²C</p>
 <p><a class="glightbox" href="../../assets/images/ssd1309-full.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SSD1309" src="../../assets/images/ssd1309-full.jpg" width="300" /></a></p>
 </li>
 </ul>
@@ -2492,7 +2479,6 @@
 <li>Size: 2,1"</li>
 <li>Resolution: 128x64 pixel</li>
 <li>Supported bus: I²C</li>
-<li>Type = 5</li>
 <li>
 <p>Datasheet: <a href="../../assets/datasheets/st7567s_gm12864-59n.webp" target="_blank">link</a></p>
 <p><a class="glightbox" href="../../assets/images/st7567s_gm12864-59n.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SSD1309" src="../../assets/images/st7567s_gm12864-59n.png" width="300" /></a></p>
@@ -2502,6 +2488,15 @@
 <p class="admonition-title">Note</p>
 <p>Due to the schematic of the display, it is not possible to turn off the backlight.</p>
 </div>
+<h3 id="lcd-display-pcd8544">LCD Display PCD8544</h3>
+<ul>
+<li>Size: 2,7"</li>
+<li>Resolution: 84x48 pixel</li>
+<li>
+<p>Supported bus: SPI</p>
+<p><a class="glightbox" href="../../assets/images/pcd8544-full.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SH1106" src="../../assets/images/pcd8544-full.jpg" width="300" /></a></p>
+</li>
+</ul>
 
 
 
@@ -2524,7 +2519,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 20, 2024 13:32:13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 14, 2024 03:40:38</span>
   </span>
 
     
