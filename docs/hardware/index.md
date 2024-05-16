@@ -2,7 +2,7 @@
 
 OpenDTU-OnBattery supports the ESP32 family of microcontrollers.
 
-Depending on the inverter to be addressed, different RF modules are required.   
+Depending on the inverter to be addressed, different RF modules are required.
 - the HM series requires the NRF24L01+ module
 - the HMS/HMT series requires the CMT2300A module
 
