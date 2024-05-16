@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This howto explains how to generate a image (`.bin` file) containing a custom `pin_mapping.json` or pre-configured `config.json`. You have to compile OpenDTU using [VSCode](../compile_vscode.md).
+This howto explains how to generate a image (`.bin` file) containing a custom `pin_mapping.json` or pre-configured `config.json`. You have to compile OpenDTU-OnBattery using [VSCode](../compile_vscode.md).
 
 ## Generate Filesystem image
 
-All configuration is placed in the so called "Filesystem Image". The image can be generated manually by creating a folder called `data` in the main directory of OpenDTU (where the `platformio.ini` is located). Then call the OpenDTU function "Build Filesystem Image" from the Project Tasks. It will generate file called `littlefs.bin` in the `.pio/build/<environment>` folder. The `littlefs.bin` file has to be flashed on address `0x3D0000` on the ESP (see [Partition Table](#partition-table) below).
+All configuration is placed in the so called "Filesystem Image". The image can be generated manually by creating a folder called `data` in the main directory of OpenDTU-OnBattery (where the `platformio.ini` is located). Then call the OpenDTU-OnBattery function "Build Filesystem Image" from the Project Tasks. It will generate file called `littlefs.bin` in the `.pio/build/<environment>` folder. The `littlefs.bin` file has to be flashed on address `0x3D0000` on the ESP (see [Partition Table](#partition-table) below).
 
 ![Build Filesystem Image](../../assets/images/vscode_platformio_littlefs.png)
 

@@ -3,7 +3,7 @@
 * Install [Visual Studio Code](https://code.visualstudio.com/download){target=_blank} (from now named "vscode")
 * In Visual Studio Code, install the [PlatformIO Extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide){target=_blank}
 * Install git and enable git in vscode - [git download](https://git-scm.com/downloads/){target=_blank} - [Instructions](https://www.jcchouinard.com/install-git-in-vscode/){target=_blank}
-* Clone this repository (you really have to clone it, don't just download the ZIP file. During the build process the git hash gets embedded into the firmware. If you download the ZIP file a build error will occur): Inside vscode open the command palette by pressing ++ctrl+shift+p++. Enter `git clone`, add the repository-URL `https://github.com/tbnobody/OpenDTU`. Next you have to choose (or create) a target directory.
+* Clone this repository (you really have to clone it, don't just download the ZIP file. During the build process the git hash gets embedded into the firmware. If you download the ZIP file a build error will occur): Inside vscode open the command palette by pressing ++ctrl+shift+p++. Enter `git clone`, add the repository-URL `https://github.com/helgeerbe/OpenDTU-OnBattery`. Next you have to choose (or create) a target directory.
 * In vscode, choose **File** --> **Open Folder** and select the previously downloaded source code. (You have to select the folder which contains the "platformio.ini" and "platformio_override.ini" file)
 * Adjust the COM port in the file "platformio_override.ini" for your USB-to-serial-converter. It occurs twice:
     * upload_port
