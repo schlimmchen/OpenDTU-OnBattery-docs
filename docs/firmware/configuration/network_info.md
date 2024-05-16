@@ -54,7 +54,7 @@ Number of station currently connected to the internal access point.
 
 #### IP Address
 
-IP address of OpenDTU when a client is connected via the internal access point.
+IP address of OpenDTU-OnBattery when a client is connected via the internal access point.
 
 #### MAC Address
 

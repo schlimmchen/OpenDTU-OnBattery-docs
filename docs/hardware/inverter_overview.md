@@ -1,13 +1,13 @@
 # Inverter Overview
 
 !!! note "TSUN compatibility remark"
-    Compatibility with OpenDTU is most likely related to the serial number of the inverter. Current findings indicate that TSUN inverters with a serial number starting with "11" are supported, whereby inverters with a serial number starting with "10" are not.
+    Compatibility with OpenDTU-OnBattery is most likely related to the serial number of the inverter. Current findings indicate that TSUN inverters with a serial number starting with "11" are supported, whereby TSUN inverters with a serial number starting with "10" are not.
 
 !!! note "Hoymiles HMS-xxxx-xT-NA compatibility remark"
     You have to change the Country/Region in the [DTU settings](../firmware/configuration/dtu_settings.md#cmt2300a-regioncountry).
 
 !!! note "Inverters with integrated WiFi are not supported"
-    All inverters with integrated WiFi which can be identified by the "W" in the name (e.g. HMS-xxxW) are not supported by OpenDTU.
+    All inverters with integrated WiFi which can be identified by the "W" in the name (e.g. HMS-xxxW) are not supported by OpenDTU-OnBattery.
 
 | Model                | Required RF Module | DC Inputs | MPP-Tracker | AC Phases | Serial Prefix |
 | ---------------------| ------------------ | :-------: | :---------: | :-------: | :-----------: |

@@ -6,7 +6,7 @@
 
     Make sure you reloaded the webinterface after the firmware update. This can be achieved, depending on your browser, by pressing either ++f5++, ++ctrl+f5++ or just by clicking on the reload button.
 
-??? question "After a firmware update OpenDTU does not get a proper IP via DHCP"
+??? question "After a firmware update OpenDTU-OnBattery does not get a proper IP via DHCP"
 
     In some cases it is required to perform a power cycle to get it working again.
 
@@ -22,7 +22,7 @@
 
     The values are reset if the inverter restarts. At some (cloudy) evenings it can occur that the brightness fluctuates heavily during the dusk. This could lead to multiple restarts of the inverter and therefor zeros in the production values. You can enable the **Yield Day Correction** in the inverter settings.
 
-??? question "OpenDTU shows wrong/unrealistic or just missing values"
+??? question "OpenDTU-OnBattery shows wrong/unrealistic or just missing values"
 
     This is most likely the case because two DTUs are querying the same inverter. This is a not supported behavior and can lead to unexpected effects. Only one DTU is allowed to query a specific inverter.
 
@@ -36,10 +36,10 @@
 
     Please also see [#926](https://github.com/tbnobody/OpenDTU/issues/926){target=_blank}
 
-??? question "After the OpenDTU startup the limit is stated as zero but the inverter seems to work properbly"
+??? question "After the OpenDTU-OnBattery startup the limit is stated as zero but the inverter seems to work properbly"
 
     The limit is fetched every 2-4 minutes from the inverter. If its fetch more often the inverter will create error messages in the event log.
-    Due to the fact that on OpenDTU startup its not know when the limit was last queried, a 4-minute delay is applied before the limit will be fetched.
+    Due to the fact that on OpenDTU-OnBattery startup its not know when the limit was last queried, a 4-minute delay is applied before the limit will be fetched.
 
 ## Debugging
 
@@ -51,18 +51,18 @@
 
     This means that under certain circumstances (activation of WLAN/Ethernet or sending requests to the inverter) the supply voltage drops to such an extent that the ESP can no longer work reliably. This can be remedied, for example, with a 100uF capacitor between VCC and GND. In exceptional cases, the power supply unit also appears to be too weak. The cable cross-section of the USB cable can also have an influence.
 
-??? question "After a reboot of the router or access point, OpenDTU does not reconnect immediatly to the WiFi"
+??? question "After a reboot of the router or access point, OpenDTU-OnBattery does not reconnect immediatly to the WiFi"
 
-    OpenDTU tries to reconnect to the WiFi for 30 seconds. If it can't find the WiFi within this time it stops reconnecting and waits for 10 minutes until a new connect attempt is done. This is done because all channels are tried during a connection attempt. This means that an end device that is connected to the "Admin Access Point" may lose the connection or is not be able to connect at all.
+    OpenDTU-OnBattery tries to reconnect to the WiFi for 30 seconds. If it can't find the WiFi within this time it stops reconnecting and waits for 10 minutes until a new connect attempt is done. This is done because all channels are tried during a connection attempt. This means that an end device that is connected to the "Admin Access Point" may lose the connection or is not be able to connect at all.
 
 ## Build errors
 
-??? question "OpenDTU does not build: error: 'bad_alloc' was not declared in this scope"
+??? question "OpenDTU-OnBattery does not build: error: 'bad_alloc' was not declared in this scope"
 
     The exact reason is not known. But it helps to delete the `~/.platformio/` folder.
 
     Please also see [#719](https://github.com/tbnobody/OpenDTU/issues/719){target=_blank}
 
-??? question "OpenDTU does not build: "C:/Users/<username\>/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h:33:10: fatal error: freertos/FreeRTOS.h: No such file or directory #include \"freertos/FreeRTOS.h\""
+??? question "OpenDTU-OnBattery does not build: "C:/Users/<username\>/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h:33:10: fatal error: freertos/FreeRTOS.h: No such file or directory #include \"freertos/FreeRTOS.h\""
 
     This is most likly a issue with your PlatformIO installation. As a workaround you can delete all packages within the `C:/Users/<username\>/.platformio/packages/` folder. The content will be downloaded on the next compile attempt.

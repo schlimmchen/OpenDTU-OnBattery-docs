@@ -49,7 +49,7 @@ may be incomplete
 
 - IP addresses and serial numbers in this examples are anonymized. Adjust to your own needs.
 - The output from curl is without a linefeed at the end, so please be careful when copying the output - do not accidentally add the shell prompt directly after it.
-- When POSTing config data to OpenDTU, always send all settings back, even if only one setting was changed. Sending single settings is not supported and you will receive a response `{"type":"warning","message":"Values are missing!"}`
+- When POSTing config data to OpenDTU-OnBattery, always send all settings back, even if only one setting was changed. Sending single settings is not supported and you will receive a response `{"type":"warning","message":"Values are missing!"}`
 - When POSTing, always put single quotes around the data part. Do not confuse the single quote `'` with the backtick `` ` ``. You have been warned.
 - Some API calls have a single URL for GET and POST - e.g. `/api/ntp/config`
 - Other API calls use e.g. `/api/limit/status` to GET data and a different URL `/api/limit/config` to POST data.
@@ -59,7 +59,7 @@ may be incomplete
 
 ### Get information
 
-You can "talk" to the OpenDTU with a command line tool like `curl`. The output is in plain JSON, without carriage return/linefeed and is therefore not very human readable.
+You can "talk" to OpenDTU-OnBattery with a command line tool like `curl`. The output is in plain JSON, without carriage return/linefeed and is therefore not very human readable.
 
 #### Get common live data
 
@@ -200,9 +200,9 @@ $ curl --u admin:openDTU42 http://192.168.10.10/api/ntp/config
 
 ### Post information
 
-With HTTP POST commands information can be written to the OpenDTU.
+With HTTP POST commands information can be written to the OpenDTU-OnBattery.
 
-The Web API is designed to allow the web frontend in the web browser to communicate with the OpenDTU software running on the ESP32. It is not designed to be intuitive or user-friendly, so please follow the instructions here.
+The Web API is designed to allow the web frontend in the web browser to communicate with the OpenDTU-OnBattery software running on the ESP32. It is not designed to be intuitive or user-friendly, so please follow the instructions here.
 
 #### Example 1: change ntp settings
 

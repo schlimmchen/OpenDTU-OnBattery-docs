@@ -20,4 +20,4 @@ Enter the same password as above. Just to make sure there is no typo.
 
 #### Allow readonly access to web interface without password :material-toggle-switch:{title="Switch"}
 
-By default, any access to OpenDTU data is password restricted. If you enable this feature guest users are able to access read-only information (like [Live View](live_view.md) or [System Information](system_info.md)) without password.
+By default, any access to OpenDTU-OnBattery data is password restricted. If you enable this feature guest users are able to access read-only information (like [Live View](live_view.md) or [System Information](system_info.md)) without password.

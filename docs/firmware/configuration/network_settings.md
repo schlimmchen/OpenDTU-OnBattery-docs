@@ -21,11 +21,11 @@ Optional password for the access point, if required.
 
 #### WiFi Hostname :material-form-textbox:{title="Textbox"}
 
-The host name with which OpenDTU logs on to various services (DNS server, MQTT server, mDNS). This name must be unique in the LAN[^2]. The text `%06X` will be replaced internally by the ChipID of the ESP. This helps to keep the hostname unique. The hostname will be also used if the ESP is connected via ethernet.
+The host name with which OpenDTU-OnBattery logs on to various services (DNS server, MQTT server, mDNS). This name must be unique in the LAN[^2]. The text `%06X` will be replaced internally by the ChipID of the ESP. This helps to keep the hostname unique. The hostname will be also used if the ESP is connected via ethernet.
 
 #### Enable DHCP :material-toggle-switch:{title="Switch"}
 
-If DHCP is enabled the OpenDTU will request it's network information like IP/Netmask/Gateway from e.g. your router. If you disable this function you have to enter these settings manually.
+If DHCP is enabled the OpenDTU-OnBattery will request it's network information like IP/Netmask/Gateway from e.g. your router. If you disable this function you have to enter these settings manually.
 
 ### Static IP Configuration
 
@@ -53,7 +53,7 @@ Please see [DNS Server 1](#dns-server-1)
 
 #### Enable mDNS :material-toggle-switch:{title="Switch"}
 
-Enables or disables the mDNS publication of the IP address and version the OpenDTU. This is useful to address the DTU in the network with its DNS name if no DNS server (e.g. on the router) is available. The generated mDNS name is composed as follows: `<WiFi Hostname>.local`.
+Enables or disables the mDNS publication of the IP address and version the OpenDTU-OnBattery. This is useful to address the DTU in the network with its DNS name if no DNS server (e.g. on the router) is available. The generated mDNS name is composed as follows: `<WiFi Hostname>.local`.
 
 ### WiFi Configuration (Admin AccessPoint)
 

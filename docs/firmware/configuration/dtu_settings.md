@@ -14,7 +14,7 @@ The possible settings depend on the RF module ([NRF24L01+](../../hardware/nrf24l
 
 #### Serial :material-form-textbox:{title="Textbox"}
 
-The serial of the DTU which is used to communicate with the inverters. It's like the inverter serial number but belongs to the DTU. A random number is generated on the first start of the OpenDTU and persisted in the configuration. It is important that all the DTU's in RF[^1] range have different serial numbers.
+The serial of the DTU which is used to communicate with the inverters. It's like the inverter serial number but belongs to the DTU. A random number is generated on the first start of OpenDTU-OnBattery and persisted in the configuration. It is important that all the DTU's in RF[^1] range have different serial numbers.
 
 #### Poll Interval: :material-form-textbox:{title="Textbox"}
 
