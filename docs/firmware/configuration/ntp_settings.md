@@ -8,7 +8,7 @@
 
 ### NTP Configuration
 
-OpenDTU needs a proper synced clock to start fetching the inverter. (Every request contains the time. This synchronises the clock in the inverter at the same time. This is particularly important for the event display.)
+OpenDTU-OnBattery needs a proper synced clock to start fetching the inverter. (Every request contains the time. This synchronises the clock in the inverter at the same time. This is particularly important for the event display.)
 
 #### Time Server :material-form-textbox:{title="Textbox"}
 
@@ -48,7 +48,7 @@ For some locations there might be even no sunset / sunrise because the sun shine
 
 ### Manual Time Synchronization
 
-#### Current OpenDTU Time :material-form-textbox-lock:{title="Read only Textbox"}
+#### Current OpenDTU-OnBattery Time :material-form-textbox-lock:{title="Read only Textbox"}
 
 Shows the current time of the ESP MCU. This value is used for all further calculations.
 
