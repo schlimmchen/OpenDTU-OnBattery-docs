@@ -11,6 +11,10 @@ Please see the [inverter overview](inverter_overview.md) to see if your inverter
 
 For an easy start, use a "NodeMCU32 ESP32 DEVKIT DOIT" or "[ESP32 NodeMCU Development Board](esp32nodemcu_38pin.md)" with an ESP32-S3 or ESP-WROOM-32 chipset on it.
 
+!!! note "Upstream Project"
+
+    Due to the growing size of the code and the memory limitations of the common ESP32 boards (4 MB flash memory) on the market today, we expect sometime in the future that ESP32 boards with minimum 8 MB of flash memory will be necessary to run the OpenDTU-OnBattery firmware. ESP32-S3 modules/boards use one of "-N8*", "-N16*", "-N32*" as suffix on their model name, indicating 8 MB, 16 MB, or 32 MB of flash memory, respectively.
+
 Sample Picture:
 
 ![NodeMCU-ESP32](../assets/images/nodemcu-esp32.png)
