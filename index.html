@@ -473,18 +473,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#key-features-inherited-from-the-upstream-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      Key Features inherited from the upstream project
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features-inherited-from-the-upstream-project" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features inherited from the upstream project
+      Key Features
     </span>
   </a>
   
@@ -2335,18 +2335,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#key-features-inherited-from-the-upstream-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      Key Features inherited from the upstream project
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features-inherited-from-the-upstream-project" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features inherited from the upstream project
+      Key Features
     </span>
   </a>
   
@@ -2426,14 +2426,6 @@ and battery peripherals. It is an alternative to Hoymiles Data Transfer Units
 inverter with two DTUs. Mixing up multiple DTUs may lead to unexpected
 behavior!</p>
 </div>
-<h2 id="key-features">Key Features</h2>
-<ul>
-<li>Dynamic Power Limiter to adjust one inverter's limit dynamically</li>
-<li>Power Meter interface to read the household power consumption</li>
-<li>Victron VE.Direct interface to communicate with Victron charge controllers</li>
-<li>Battery interface (JK BMS, Pylontech, Victron SmartShunt) to know a battery's state</li>
-<li>AC charger interface to control a Huawei AC charger</li>
-</ul>
 <h2 id="key-features-inherited-from-the-upstream-project">Key Features inherited from the upstream project</h2>
 <ul>
 <li>Read live data from inverter</li>
@@ -2455,6 +2447,44 @@ behavior!</p>
 <li>Status LEDs</li>
 <li>Configuration management (export / import configurations)</li>
 <li>Dark Theme</li>
+</ul>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>Dynamically adjusts one Hoymiles' production to match the currently used energy in the household</li>
+<li>Power Meter interface to read the household power consumption</li>
+<li>Victron VE.Direct interface to communicate with up to two Victron MPPT charge controllers</li>
+<li>Battery interface. Reads the SOC% for starting/stopping the power output and provide the battery data:<ul>
+<li>via CAN bus (SN65HVD230 interface) for Pylontech/Pylontech compatible batteries</li>
+<li>via Victron SmartShunt (using Ve.Direct protocol)</li>
+<li>via Jikong (JK) BMS (using serial connection)</li>
+<li>via MQTT (Broker)</li>
+</ul>
+</li>
+<li>Battery safety: Reads the voltage from Victron MPPT charge controller or from the Hoymiles DC inputs and starts/stops the power producing based on configurable voltage thresholds</li>
+<li>Battery lifespan efficiency: Reads the actual solar panel power produced by Victron MPPT and adjusts the Hoymiles production accordingly in order to not further charge the battery above a defined SOC%</li>
+<li>Voltage correction that takes the voltage drop because of the current output load into account</li>
+<li>AC charger interface to control a Huawei R4850G2 power supply unit that can act as AC charger. Supports status shown on the web interface and options to set voltage and current limits on the web interface and via MQTT. Connection is done using CAN bus (needs to be separate from Pylontech CAN bus) via MCP2515/TJA1050 interface</li>
+<li>
+<p>Examples (illustrative)</p>
+<ul>
+<li>
+<p>Zero feed-in (in German: Nulleinspeisung)
+ <a class="glightbox" href="assets/images/Home/Schematic_Nulleinspeisung.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Logo" src="assets/images/Home/Schematic_Nulleinspeisung.png" /></a> </p>
+</li>
+<li>
+<p>With Battery and DC charging via (up to two) Victron MPPT and (optional) Victron SmartShunt. <em>Note: Due to the limitation of most ESP32 boards, you can only use two Victron units, i.e. two Victron MPPTs or, one Victron MPPT and a Victron SmartShunt. You can not use two Victron MPPTs and a Victron SmartShunt at the same time.</em>
+ <a class="glightbox" href="assets/images/Home/Schematic_howtochargeaSystemwithVICTRON%2BSHUNT%2BBattery.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Logo" src="assets/images/Home/Schematic_howtochargeaSystemwithVICTRON%2BSHUNT%2BBattery.png" /></a></p>
+</li>
+<li>
+<p>With Pylontech Battery and DC charging via (up to two) Victron MPPT
+ <a class="glightbox" href="assets/images/Home/Schematic_howtochargeaSystemwithVICTRON%2BPylon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Logo" src="assets/images/Home/Schematic_howtochargeaSystemwithVICTRON%2BPylon.png" /></a></p>
+</li>
+<li>
+<p>With Battery and AC charging via Huawei Rectifier (using the Huawei AC charger in combination with the CMT2300A radio board for HMT- HMS- Inverters is not supported at the moment)
+ <a class="glightbox" href="assets/images/Home/Schematic_howtochargeaSystemwithHuaweiR4850.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Logo" src="assets/images/Home/Schematic_howtochargeaSystemwithHuaweiR4850.png" /></a></p>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="features-for-developers">Features for developers</h2>
 <ul>
@@ -2502,7 +2532,7 @@ It's goal was to replace the original Hoymiles DTU (Telemetry Gateway), which up
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 8, 2024 21:56:34</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 19, 2024 23:21:39</span>
   </span>
 
     
