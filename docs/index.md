@@ -18,13 +18,7 @@ and battery peripherals. It is an alternative to Hoymiles Data Transfer Units
     inverter with two DTUs. Mixing up multiple DTUs may lead to unexpected
     behavior!
 
-## Key Features
 
-* Dynamic Power Limiter to adjust one inverter's limit dynamically
-* Power Meter interface to read the household power consumption
-* Victron VE.Direct interface to communicate with Victron charge controllers
-* Battery interface (JK BMS, Pylontech, Victron SmartShunt) to know a battery's state
-* AC charger interface to control a Huawei AC charger
 
 ## Key Features inherited from the upstream project
 
@@ -47,6 +41,35 @@ and battery peripherals. It is an alternative to Hoymiles Data Transfer Units
 * Status LEDs
 * Configuration management (export / import configurations)
 * Dark Theme
+
+## Key Features
+
+* Dynamically adjusts one Hoymiles' production to match the currently used energy in the household
+* Power Meter interface to read the household power consumption
+* Victron VE.Direct interface to communicate with up to two Victron MPPT charge controllers
+* Battery interface. Reads the SOC% for starting/stopping the power output and provide the battery data:
+     - via CAN bus (SN65HVD230 interface) for Pylontech/Pylontech compatible batteries
+     - via Victron SmartShunt (using Ve.Direct protocol)
+     - via Jikong (JK) BMS (using serial connection)
+     - via MQTT (Broker)
+* Battery safety: Reads the voltage from Victron MPPT charge controller or from the Hoymiles DC inputs and starts/stops the power producing based on configurable voltage thresholds
+* Battery lifespan efficiency: Reads the actual solar panel power produced by Victron MPPT and adjusts the Hoymiles production accordingly in order to not further charge the battery above a defined SOC%
+* Voltage correction that takes the voltage drop because of the current output load into account
+* AC charger interface to control a Huawei R4850G2 power supply unit that can act as AC charger. Supports status shown on the web interface and options to set voltage and current limits on the web interface and via MQTT. Connection is done using CAN bus (needs to be separate from Pylontech CAN bus) via MCP2515/TJA1050 interface
+* Examples (illustrative)
+     * Zero feed-in (in German: Nulleinspeisung)
+     ![Logo](assets/images/Home/Schematic_Nulleinspeisung.png) 
+
+     * With Battery and DC charging via (up to two) Victron MPPT and (optional) Victron SmartShunt. *Note: Due to the limitation of most ESP32 boards, you can only use two Victron units, i.e. two Victron MPPTs or, one Victron MPPT and a Victron SmartShunt. You can not use two Victron MPPTs and a Victron SmartShunt at the same time.*
+     ![Logo](assets/images/Home/Schematic_howtochargeaSystemwithVICTRON+SHUNT+Battery.png)
+
+     * With Pylontech Battery and DC charging via (up to two) Victron MPPT
+     ![Logo](assets/images/Home/Schematic_howtochargeaSystemwithVICTRON+Pylon.png)
+
+     * With Battery and AC charging via Huawei Rectifier (using the Huawei AC charger in combination with the CMT2300A radio board for HMT- HMS- Inverters is not supported at the moment)
+     ![Logo](assets/images/Home/Schematic_howtochargeaSystemwithHuaweiR4850.png)
+
+
 
 ## Features for developers
 
