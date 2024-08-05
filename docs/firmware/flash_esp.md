@@ -40,7 +40,7 @@ The actual procedure to flash the ESP32 depends on the tool used. Click on the t
 
     [OpenDTU-OnBattery Web Flasher](webinstall.md)
 
-    The easiest, platform independent method. Requires Chrome based browser.
+    The easiest, platform-independent method. Requires Chrome or Edge browser.
 
 === "ESP Flash Tools :material-microsoft-windows:"
     Espressif provides their own [Flash Download Tools](https://www.espressif.com/en/support/download/other-tools){target=_blank} for Windows.
