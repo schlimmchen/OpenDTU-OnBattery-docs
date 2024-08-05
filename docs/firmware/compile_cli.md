@@ -5,8 +5,8 @@
 * Adjust the COM port in the file "platformio_override.ini". It occurs twice:
     * upload_port
     * monitor_port
-* build: `platformio run -e generic`
-* upload to esp module: `platformio run -e generic -t upload`
+* build: `platformio run -e generic_esp32s3`
+* upload to esp module: `platformio run -e generic_esp32s3 -t upload`
 * other options:
-    * clean the sources:  `platformio run -e generic -t clean`
-    * erase flash: `platformio run -e generic -t erase`
+    * clean the sources:  `platformio run -e generic_esp32s3 -t clean`
+    * erase flash: `platformio run -e generic_esp32s3 -t erase`
