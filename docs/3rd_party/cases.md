@@ -1,5 +1,12 @@
 # Available cases
 
+!!!warning "Compatibility"
+
+    Beware that these cases were originally designed for ESP32 boards with 4 MB
+    of flash memory, which are not compatible with OpenDTU-OnBattery. When
+    using such a case, make sure that an upgraded ESP32(-S3) with at least 8 MB
+    of flash storage fits the case as well.
+
 * [Open DTU box](https://www.thingiverse.com/thing:5435911){target=_blank}
 * [Sól: OpenDTU (ESP32 / NRF24L01+) case](https://www.printables.com/model/293003-sol-opendtu-esp32-nrf24l01-case){target=_blank}
 * [Complete solderless case for Olimex ESP32-POE-ISO](https://www.thingiverse.com/thing:5661780){target=_blank}
