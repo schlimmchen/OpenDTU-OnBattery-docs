@@ -70,6 +70,16 @@ For support using OpenDTU-OnBattery you can find us on Github or Discord:
 [:material-github: Github Discussions][2]{target=_blank .md-button .md-button--primary }
 [:fontawesome-brands-discord: Discord Chat][3]{target=_blank .md-button .md-button--primary }
 
+## Donate
+
+The firmware is open-source and free to use!
+
+If you like this project you can show your appreciation by making a small
+donation. This will help with offsetting the cost of hardware bought to develop
+and test features, or offsetting recurring costs like domain registrations.
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support on ko-fi', '#121317', 'W7W6YT23K');kofiwidget2.draw();</script>
+
 [1]: https://www.hoymiles.com/
 [2]: https://www.github.com/helgeerbe/OpenDTU-OnBattery/discussions
 [3]: https://discord.gg/WzhxEY62mB
