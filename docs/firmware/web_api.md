@@ -7,7 +7,10 @@ Information in JSON format can be obtained through the web API.
 
 ## List of URLs
 
-may be incomplete
+!!!warning "Incomplete"
+    This list is definitely incomplete. The OpenDTU-OnBattery-specific
+    endpoints are not yet documented (the one in this list are inherited from
+    the upstream project's documentation).
 
 | GET/POST | Auth required | URL |
 | -------- | --- | -- |
