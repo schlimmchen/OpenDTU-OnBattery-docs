@@ -156,7 +156,6 @@ nav:
       - firmware/howto/serial_console.md
       - firmware/howto/migrate_generic.md
       - firmware/howto/upgrade_partition.md
-      - firmware/howto/generate_image.md
     - Compiling:
       - firmware/compile_vscode.md
       - firmware/compile_cli.md
