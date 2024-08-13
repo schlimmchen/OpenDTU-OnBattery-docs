@@ -1,6 +1,10 @@
 # Migrate 'generic' to 'generic_esp32'
 
-## Difference between `opendtu-onbattery-generic.bin` and `opendtu-onbattery-generic_esp32.bin`
+!!!note "Applicability"
+    This information only applies to older releases. Neither the `generic` nor
+    the `generic_esp32` firmware variants are released any more.
+
+## Differences
 
 The only difference between `opendtu-onbattery-generic.bin` (deprecated) and `opendtu-onbattery-generic_esp32.bin` is, that `opendtu-onbattery-generic.bin` contains hard-coded pins for the nRF24 Module (and only for that module). The `opendtu-onbattery-generic_esp32.bin` comes with no pre-configured pins and can be set-up by uploading a [device profile](../device_profiles.md).
 
