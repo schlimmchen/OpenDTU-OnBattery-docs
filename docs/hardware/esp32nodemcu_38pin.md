@@ -1,6 +1,9 @@
 # ESP32 NodeMCU 38 pin
 
-To use this board please refere to the [Device Profile](../firmware/device_profiles.md) called `nodemcu_esp32.json` or `blinkyparts_esp32.json`. Both are nicely compatible with the dev board. Open the JSON file with a text editor and have a look at the specific pin numbers.
+!!!note "Flash Memory"
+    Get a version with at least 8 MB of flash memory to be able to use OTA updates.
+
+To use this board please refer to the [Device Profile](../firmware/device_profiles.md) called `nodemcu_esp32.json` or `blinkyparts_esp32.json`. Both are nicely compatible with the dev board. Open the JSON file with a text editor and have a look at the specific pin numbers.
 
 ## Schematic
 
