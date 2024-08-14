@@ -47,7 +47,7 @@ memory size in section "Hardware Information".
   bootloop.
 
 If you are coming from `generic` see the [migration
-guide](howto/migrate_generic.md) to configure the wiring to your NRF24 module.
+guide](migrate_generic.md) to configure the wiring to your NRF24 module.
 Going forward, there will be no pre-built firmware release with compiled-in
 pin mappings, i.e., there is no equivalent variant to `generic`.
 
