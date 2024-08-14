@@ -8,6 +8,11 @@
 
     OpenDTU-OnBattery is a fork of [OpenDTU][4] by Thomas Basler (tbnobody).
 
+!!! note "Upstream Documentation"
+    This documentation is not yet completely adjusted to OpenDTU-OnBattery.
+    Feel free to help improving the documentation by proposing changes through
+    pull requests.
+
 Open Source software to talk to [Hoymiles][1]{target=_blank} solar inverters
 and battery peripherals. It is an alternative to Hoymiles Data Transfer Units
 (DTUs), which sync data into the s-Miles cloud.
