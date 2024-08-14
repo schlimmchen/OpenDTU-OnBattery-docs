@@ -113,7 +113,6 @@ nav:
       - RF Modules:
         - hardware/nrf24l01plus.md
         - hardware/cmt2300a.md
-      - hardware/led.md
       - hardware/display.md
   - Firmware:
     - Installation:

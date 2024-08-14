@@ -27,9 +27,8 @@ For an easy start, acquire an [OpenDTU Fusion](../3rd_party/opendtu_fusion.md) b
    used USB cable might have an impact.
 4. Wire the ESP32-S3 to the RF module(s).
 5. Wire a [display](display.md) (optional).
-6. Wire [LEDs](led.md) (optional).
-7. [Flash the firmware](../firmware/flash_esp.md) via USB.
-8. Upload a [device profile](../firmware/device_profiles.md) which describes
+6. [Flash the firmware](../firmware/flash_esp.md) via USB.
+7. Upload a [device profile](../firmware/device_profiles.md) which describes
    your hardware (or look at the profile first and connect your pins
    accordingly) using the [Config
    Managment](../firmware/configuration/config_settings.md).
