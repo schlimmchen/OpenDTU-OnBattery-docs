@@ -4,8 +4,8 @@ Upgrading from OpenDTU-OnBattery version 2024.06.03 or older to versions
 2024.08.xx or newer requires physical access to the ESP32 board. The new
 firmware (factory image including new partition layout) must be written to
 flash using the board's USB connection. This is a one-time operation, and newer
-versions can again be upgraded over-the-air (OTA), unless you are using an
-ESP32 with 4 MB of flash memory. Writing the factory image will preserve the
+versions can again be upgraded over-the-air (OTA), unless you continue to use
+an ESP32 with 4 MB of flash memory. Writing the factory image will preserve the
 configuration (do *not* erase the flash beforehand, just write the factory
 firmware binary).
 
@@ -18,7 +18,9 @@ firmware binary).
    see **Info** --> **System**.
 3. Determine the new firmware variant to use for your device, see below.
 4. [Flash the factory firmware image](../flash_esp.md) using the USB connection
-   of your board.
+   of your board. Do **not** erase the whole flash memory beforehand. The flash
+   tool of your choice will only erase the parts of the flash memory that will
+   be overwritten.
 5. The update should be installed and your device should boot normally using
    the new firmware and using the existing settings.
 
@@ -32,6 +34,8 @@ on your board, install [OpenDTU-OnBattery
 2024.06.03](https://github.com/helgeerbe/OpenDTU-OnBattery/releases/tag/2024.06.03)
 and navigate to **Info** --> **System** in the web UI. It lists the flash
 memory size in section "Hardware Information".
+
+![Flash size info](../../assets/images/firmware/flash_size_info.png)
 
 ### Coming from `generic` or `generic_esp32`
 
@@ -53,6 +57,12 @@ The firmware is named the same, but it is now only compatible with devices
 having 8 MB or more of flash memory. Attempting to write this onto a device
 with 4 MB of flash results in a bootloop.
 
+If you are actually on an ESP32-S3 with 4 MB of flash (should be quite exotic)
+and need a matching firmware image, then [open an
+issue](https://github.com/helgeerbe/OpenDTU-OnBattery/issues). Similar to
+`generic_esp32_4mb_no_ota` there will be no support for OTA updates and you
+will have to upgrade using a wired connection going forward.
+
 ### Coming from Another Variant
 
 As these variants are custom-build, you should know what you are doing.
@@ -63,17 +73,17 @@ OTA support. Other variants use the new layout for 8 MB of flash memory.
 
 To accomodate a larger firmware binary, the ESP32 flash memory partition layout
 changed with the release of OpenDTU-OnBattery version 2024.08.xx. All firmware
-released since then uses this new partition layout.
+released since then uses this new partition layout. Firmware variants `generic`
+and `generic_esp32` are no longer available.
 
 ![Partition Layout](../../assets/images/firmware/partition_layout.png)
 
 * Partitions `otadata` and `nvs` are not drawn in this graph. They remain
   unchanged.
 * The `spiffs` partition was *not* moved in order to preserve the config and
-  pin mapping when upgrading.
-* Factory firmware images include data up to and including `app0`, i.e., when
-  writing these images, the `spiffs` partition is neither erased nor
-  overwritten.
+  pin mapping when upgrading. Factory firmware images include data up to and
+  including `app0`, i.e., when writing these images, the `spiffs` partition is
+  neither erased nor overwritten.
 * Both older firmware partitions were merged, doubling the space available for
   the first firmware partition `app0`.
 * The second firmware partition `app1` starts after the `spiffs` partition and
