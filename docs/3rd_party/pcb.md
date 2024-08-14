@@ -3,7 +3,7 @@
 !!!warning "Compatibility"
 
     Beware that these breakout PCBs were originally designed for ESP32 boards with 4 MB
-    of flash memory, which are not compatible with OpenDTU-OnBattery. When
+    of flash memory, which are not fully compatible with OpenDTU-OnBattery. When
     using such a PCB, make sure that an upgraded ESP32(-S3) with at least 8 MB
     of flash storage fits the PCB as well.
 
