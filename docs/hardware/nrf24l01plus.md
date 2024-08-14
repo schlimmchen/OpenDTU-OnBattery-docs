@@ -10,19 +10,25 @@
 
 ## Description
 
-The NRF24L01+ module is a 2,4GHz RF module. **It is absolutly important to get the newer PLUS variant!** (Only the PLUS variant supports the required transmission speeds and is able to communicate with the inverter)
-There are several variants with different qualities and prices. Most of them are pin compatible. A noteable brand name is e.g. [EBYTE ML01DP5](https://www.ebyte.com/en/pdf-down.aspx?id=1136){target=_blank}. It includes a proper shielding and integrated capacitors.
+The NRF24L01+ module is a 2,4GHz RF module. **It is absolutly important to get
+the newer PLUS variant**! Only the PLUS variant supports the required
+transmission speeds and is able to communicate with the inverter.
+There are several variants with different qualities and prices. Most of them
+are pin compatible. A noteable brand name is e.g. [EBYTE
+ML01DP5](https://www.ebyte.com/en/pdf-down.aspx?id=1136){target=_blank}. It
+includes a proper shielding and integrated capacitors.
 
 Buy your hardware from a trusted source, at best from a dealer/online shop in your country where you have support and the right to return non-functional hardware.
 When you want to buy from Amazon, AliExpress, eBay etc., take note that there is a lot of low-quality or fake hardware offered. Read customer comments and ratings carefully!
 
-A heavily incomplete list of trusted hardware shops in germany is:
+A heavily incomplete list of trusted hardware shops in Germany:
+
+!!!note "Affiliation"
+    This list is for your convenience only, the project is not related to any of these shops.
 
 * [AZ-Delivery](https://www.az-delivery.de/)
 * [Makershop](https://www.makershop.de/)
 * [Berrybase](https://www.berrybase.de/)
-
-This list is for your convenience only, the project is not related to any of these shops.
 
 ## Pictures
 
@@ -43,7 +49,8 @@ This list is for your convenience only, the project is not related to any of the
 
 ## Pin assignment
 
-The connection pins from the nRF24L01+ module to the ESP32 module can dynamically configured using [Device Profiles](../firmware/device_profiles.md) (prefered method) or at compile time.
+The actual pins used to connect the nRF24L01+ module to the ESP32 module are
+configured using a [Device Profile](../firmware/device_profiles.md).
 
 | Name in Device Profile | Pin Function | Description | Possible name(s) on PCB |
 | ---------------------- | ------------ | ----------- | -------------------- |
