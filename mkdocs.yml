@@ -107,9 +107,9 @@ nav:
       - hardware/index.md
       - hardware/inverter_overview.md
       - ESP32 Modules:
+        - hardware/recommendations.md
         - hardware/esp32nodemcu_38pin.md
         - hardware/olimexpoeiso.md
-        - hardware/ESP32_Future_Versions_and_Memory.md
       - RF Modules:
         - hardware/nrf24l01plus.md
         - hardware/cmt2300a.md
