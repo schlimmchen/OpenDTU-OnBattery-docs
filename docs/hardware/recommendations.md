@@ -21,6 +21,12 @@ is possibly not connected natively to the USB port. There are boards with two
 USB connectors, where one does connect natively to the ESP32. In that case, the
 board is fine.
 
+!!!warning
+    Modules with 8 MB of PSRAM or 16 MB or more of flash memory use an octal
+    SPI interface. Pins GPIO35, GPIO36 and GPIO37 are used for the internal
+    communication between ESP32-S3 and SPI flash/PSRAM memory, thus not
+    available for external use.
+
 | Name                    | Flash | PSRAM | Antenna   |
 | ----------------------- | ----- | ----- | --------- |
 | ESP32-S3-WROOM-1U-N16R8 | 16 MB |  8 MB | external  |
