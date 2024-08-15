@@ -2,6 +2,10 @@
 
 ## Basics
 
+??? question "Is the DPL able to manage an inverter with mixed (battery and solar panel) power inputs"
+
+    No. Setups where some inverter inputs are connected to solar panels and some inverter inputs are connected to a battery is not supported as the DPL is not designed to be able to calculate a reasonable limit for such an inverter.
+
 ??? question "After a firmware update some new features do not appear in the web interface"
 
     Make sure you reloaded the webinterface after the firmware update. This can be achieved, depending on your browser, by pressing either ++f5++, ++ctrl+f5++ or just by clicking on the reload button.
