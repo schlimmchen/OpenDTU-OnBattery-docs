@@ -115,6 +115,7 @@ nav:
         - hardware/nrf24l01plus.md
         - hardware/cmt2300a.md
       - hardware/display.md
+      - Limitations: hardware/limitations.md
       - VE.Direct: hardware/vedirect.md
       - Battery:
         - hardware/battery.md
