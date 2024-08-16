@@ -115,6 +115,12 @@ nav:
         - hardware/nrf24l01plus.md
         - hardware/cmt2300a.md
       - hardware/display.md
+      - Battery:
+        - hardware/battery.md
+        - JK BMS:
+          - hardware/jkbms/index.md
+          - "JK-B* Models": hardware/jkbms/models_b.md
+          - "JK-PB* Models": hardware/jkbms/models_pb.md
   - Firmware:
     - Installation:
       - firmware/index.md
