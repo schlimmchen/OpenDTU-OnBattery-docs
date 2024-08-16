@@ -116,6 +116,7 @@ nav:
         - hardware/cmt2300a.md
       - hardware/display.md
       - Limitations: hardware/limitations.md
+      - Victron Charge Controllers: hardware/victron_charge_controllers.md
       - VE.Direct: hardware/vedirect.md
       - Battery:
         - hardware/battery.md
