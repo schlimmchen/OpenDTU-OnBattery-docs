@@ -144,6 +144,10 @@ nav:
         - firmware/configuration/security_settings.md
         - firmware/configuration/dtu_settings.md
         - firmware/configuration/device_settings.md
+        - Battery:
+          - firmware/configuration/battery_settings.md
+          - firmware/configuration/battery_settings_jkbms.md
+          - firmware/configuration/battery_settings_mqtt.md
         - firmware/configuration/config_settings.md
         - firmware/configuration/firmware_upgrade.md
         - firmware/configuration/device_reboot.md
