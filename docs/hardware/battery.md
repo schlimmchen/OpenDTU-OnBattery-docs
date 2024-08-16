@@ -12,7 +12,7 @@ The following data providers (battery interfaces) are supported:
 1. Pylontech using CAN
 2. Pytes using CAN
 3. [JK BMS](jkbms/index.md) using UART
-4. Victron SmartShunt using VE.Direct
+4. Victron SmartShunt using [VE.Direct](vedirect.md)
 5. [MQTT](#mqtt)
 
 ## MQTT
