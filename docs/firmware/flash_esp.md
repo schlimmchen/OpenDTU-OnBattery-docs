@@ -14,11 +14,21 @@ that is not working:
 
 The actual procedure to flash the ESP32 depends on the tool used. Click on the tab below that matches your flash tool.
 
-=== "Web Flasher :material-linux::material-apple::material-microsoft-windows:"
+=== "Community Web Flasher :material-linux::material-apple::material-microsoft-windows:"
 
     [OpenDTU-OnBattery Web Flasher](webinstall.md)
 
     The easiest, platform-independent method. Requires Chrome or Edge browser.
+    Only installs firmware which has been released through
+    [Github](https://github.com/helgeerbe/OpenDTU-OnBattery/releases).
+
+=== "Espressif Web Flasher :material-linux::material-apple::material-microsoft-windows:"
+
+    [Espressif Web Flasher](https://espressif.github.io/esptool-js/)
+
+    Platform-independent method. Requires Chrome or Edge browser. Allows to
+    install arbitrary firmware binaries. Flash factory binaries to address
+    `0x0` and non-factory binaries to address `0x10000`.
 
 === "esptool.py :material-linux::material-apple::material-microsoft-windows:"
     Install [esptool](https://github.com/espressif/esptool) using `pip`:
