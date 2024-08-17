@@ -118,8 +118,7 @@ nav:
       - Limitations: hardware/limitations.md
       - Victron Charge Controllers: hardware/victron_charge_controllers.md
       - VE.Direct: hardware/vedirect.md
-      - Battery:
-        - hardware/battery.md
+      - Batteries:
         - JK BMS:
           - hardware/jkbms/index.md
           - "JK-B* Models": hardware/jkbms/models_b.md
@@ -130,6 +129,10 @@ nav:
       - firmware/flash_esp.md
       - firmware/webinstall.md
     - firmware/wifi_setup.md
+    - Dynamic Power Limiter:
+      - firmware/dpl.md
+      - firmware/solar_passthrough.md
+    - Battery Interface: firmware/battery_interface.md
     - Web UI:
       - firmware/configuration/login.md
       - Live View:
@@ -147,6 +150,7 @@ nav:
         - firmware/configuration/security_settings.md
         - firmware/configuration/dtu_settings.md
         - firmware/configuration/device_settings.md
+        - firmware/configuration/dpl.md
         - Battery:
           - firmware/configuration/battery_settings.md
           - firmware/configuration/battery_settings_jkbms.md
