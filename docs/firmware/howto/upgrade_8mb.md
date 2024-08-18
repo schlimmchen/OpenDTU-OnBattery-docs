@@ -1,7 +1,7 @@
-# Upgrade to 2024.08.xx or newer
+# Upgrade to 2024.08.18 or newer
 
 Upgrading from OpenDTU-OnBattery version 2024.06.03 or older to versions
-2024.08.xx or newer requires physical access to the ESP32 board. The new
+2024.08.18 or newer requires physical access to the ESP32 board. The new
 firmware (factory image including new partition layout) must be written to
 flash using the board's USB connection. This is a one-time operation, and newer
 versions can again be upgraded over-the-air (OTA), unless you continue to use
@@ -72,7 +72,7 @@ OTA support. Other variants use the new layout for 8 MB of flash memory.
 ## Background
 
 To accomodate a larger firmware binary, the ESP32 flash memory partition layout
-changed with the release of OpenDTU-OnBattery version 2024.08.xx. All firmware
+changed with the release of OpenDTU-OnBattery version 2024.08.18. All firmware
 released since then uses this new partition layout. Firmware variants `generic`
 and `generic_esp32` are no longer available.
 
