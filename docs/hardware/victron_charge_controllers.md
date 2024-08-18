@@ -29,7 +29,7 @@ ESP32 with OpenDTU-OnBattery to either two or three, see
 
 To start processing messages from a charge controller, enable the VE.Direct
 interface in the web UI. Additionally, define up to three charge controllers in
-the [device profile](../firmware/device_profile.md).
+the [device profile](../firmware/device_profiles.md).
 
 ## VE.Smart Network
 
@@ -42,7 +42,7 @@ To do so,
 
 * configure all charge controllers to be part of the same VE.Smart Bluetooth network.
 * connect the receive pin of the charge controller with a transmit (TX) pin on the ESP32.
-* configure the transmit pin in the [device profile](../firmware/device_profile.md).
+* configure the transmit pin in the [device profile](../firmware/device_profiles.md).
 
 This setup allows OpenDTU-OnBattery to query the "VE.Smart network total power"
 using a HEX-Mode message. This value, if available, is then preferred to
