@@ -69,6 +69,23 @@ As these variants are custom-build, you should know what you are doing.
 Variants for devices with only 4 MB of flash use the partition layout without
 OTA support. Other variants use the new layout for 8 MB of flash memory.
 
+## Downgrading
+
+!!!warning "Configuration"
+    After downgrading, you should upload a configuration backup created
+    *before* upgrading. **Downgrading is not supported in general**. Some settings
+    might revert to default values after downgrading.
+
+!!!warning "4MB flash"
+    Dowgrading a device with 4MB of flash requires writing the older factory
+    binary using a wired connection as changing the firmware over-the-air is
+    not supported, neither for updates nor for downgrades.
+
+Once you installed a factory firmware binary (2024.08.18 or newer) using a
+wired connection, you may downgrade to an older version using the over-the-air
+mechanism. This works because the partition layout can now handle all released
+firmware sizes.
+
 ## Background
 
 To accomodate a larger firmware binary, the ESP32 flash memory partition layout
