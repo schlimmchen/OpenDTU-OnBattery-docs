@@ -9,7 +9,7 @@ The WebFlasher is platform-independent, but requires the Chrome or Edge browser.
 
 ## Troubleshooting
 
-* It might be required to manually [enter bootloader mode](flash_esp.md#bootloader_mode)
+* It might be required to manually [enter bootloader mode](flash_esp.md#bootloader-mode)
   before attempting to flash the ESP32 using the WebFlasher.
 * Try holding the `BOOT` button on your board until you see the WebFlasher is
   erasing the flash memory and actually installing the firmware. This can help
