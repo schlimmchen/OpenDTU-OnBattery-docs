@@ -1,8 +1,3 @@
----
-title: Community WebFlasher
-description: Firmware Web Installer for OpenDTU-OnBattery Firmware
----
-
 # Community WebFlasher
 
 Use the [Community WebFlasher](https://solar.metacontrol.eu/opendtu-onbattery-webflasher/)
@@ -11,3 +6,12 @@ user-defined release version of the pre-built firmware binaries (sourced from
 the project's GitHub [Releases Page](https://github.com/helgeerbe/OpenDTU-OnBattery/releases)).
 
 The WebFlasher is platform-independent, but requires the Chrome or Edge browser.
+
+## Troubleshooting
+
+* It might be required to manually [enter bootloader mode](flash_esp.md#bootloader_mode)
+  before attempting to flash the ESP32 using the WebFlasher.
+* Try holding the `BOOT` button on your board until you see the WebFlasher is
+  erasing the flash memory and actually installing the firmware. This can help
+  when a reset is performed in the preparation step, as holding the `BOOT`
+  button ensures that the ESP32 restarts into bootloader mode.
