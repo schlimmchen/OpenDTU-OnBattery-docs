@@ -3,7 +3,15 @@
 !!!note "Flash Memory"
     Get a version with at least 8 MB of flash memory to be able to use OTA updates.
 
-To use this board please refer to the [Device Profile](../firmware/device_profiles.md) called `nodemcu_esp32.json` or `blinkyparts_esp32.json`. Both are nicely compatible with the dev board. Open the JSON file with a text editor and have a look at the specific pin numbers.
+!!!warning "UART0"
+    Do **NOT** connect a peripheral to UART0 (GPIO1, GPIO3). [UART0 is
+    used](limitations.md#using-uart0) by the ESP32's bootloader and by the
+    firmware to print messages.
+
+To use this board please refer to the [Device
+Profile](../firmware/device_profiles.md) called `nodemcu_esp32.json` or
+`blinkyparts_esp32.json`. Both are nicely compatible with the dev board. Open
+the JSON file with a text editor and have a look at the specific pin numbers.
 
 ## Schematic
 

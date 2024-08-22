@@ -38,3 +38,41 @@ once all hardware UARTs are occupied, features/peripherals requiring a hardware
 UART will fail to initialize. Have a look at the output on the [serial
 console](../firmware/howto/serial_console.md) when booting to know how hardware
 UARTs are assigned.
+
+## Using UART0
+
+In general, avoid using UART0 to connect peripherals.
+
+* On ESP32, GPIO1 and GPIO3 are in use by UART0.
+* On ESP32-S3, GPIO43 and GPIO44 are in use by UART0.
+
+### Bootloader Interaction
+
+Connecting a peripheral to UART0 of your ESP32 can break interaction with the
+bootloader. The bootloader uses UART0 to communicate with the flash tool. A
+peripheral connected to UART0 might therefore interfere in the communication
+with the bootloader, preventing writing to the flash memory over USB in
+particular.
+
+* On ESP32 boards, UART0 is connected to the USB-UART bridge.
+* On ESP32-S3 boards with multiple USB ports, the port connected to the
+  USB-UART bridge on the USB side is connected to UART0 on the UART side
+  of the bridge.
+
+### Bootloader Output
+
+The ESP32's bootloader will print messages on UART0 on every boot. If a
+peripheral is connected to UART0, this peripheral will receive these messages.
+If the peripheral is not robust against invalid messages and, depending on the
+baud rate, invalid UART chararacters, it may cease to function properly.
+
+### Firmware Messages
+
+OpenDTU-OnBattery uses UART0 to print messages. These are the same messages
+appearing in the web console, except that connecting to UART0 allows to read
+messages even while the firmware is still booting and not yet connected to the
+network.
+
+On ESP32-S3 using firmware variant `generic_esp32s3_usb` (all environments that
+define `ARDUINO_USB_MODE=1` and `ARDUINO_USB_CDC_ON_BOOT=1`), the messages are
+instead available on the virtual serial interface of the native USB connection.

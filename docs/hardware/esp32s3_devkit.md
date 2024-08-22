@@ -5,14 +5,18 @@ to assemble your own hardware components. Have a look at the [user
 guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html).
 
 !!!note "Flash Memory"
-    The original boards by Espressig as well as the imitations should all have
+    The original boards by Espressif as well as the imitations should all have
     at least 8 MB of flash memory, making it possible to use OTA updates.
 
-!!!warning
+!!!warning "Reserved Pins"
     Modules with 8 MB of PSRAM or 16 MB or more of flash memory use an octal
     SPI interface. Pins GPIO35, GPIO36 and GPIO37 are used for the internal
     communication between ESP32-S3 and SPI flash/PSRAM memory, thus not
     available for external use.
+
+!!!warning "Avoid UART0"
+    Avoid using UART0 (GPIO43, GPIO44) to connect a peripheral, as it is
+    [reserved for the bootloader](limitations.md#using-uart0).
 
 ## Overview
 

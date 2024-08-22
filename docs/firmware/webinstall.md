@@ -15,3 +15,4 @@ The WebFlasher is platform-independent, but requires the Chrome or Edge browser.
   erasing the flash memory and actually installing the firmware. This can help
   when a reset is performed in the preparation step, as holding the `BOOT`
   button ensures that the ESP32 restarts into bootloader mode.
+* Make sure to [disconnect peripherals from UART0](flash_esp.md#free-uart0).

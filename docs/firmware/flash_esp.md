@@ -35,6 +35,14 @@ flash utility automatically, but sometimes that is not working.
       the power supply, possibly by plugging in the USB cable.
 3. Release the `BOOT` button.
 
+## Free UART0
+
+You must disconnect a peripheral from UART0 to flash the ESP32, as [UART0 is
+used](../hardware/limitations.md#using-uart0) to interact with the bootloader.
+
+Exception: An ESP32-S3 board is connected through the native USB port to the PC
+attempting to interact with the bootloader.
+
 ## Write to Flash Memory
 
 The actual procedure to flash the ESP32 depends on the tool used. Click on the
