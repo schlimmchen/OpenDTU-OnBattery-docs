@@ -2406,6 +2406,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Compile with Visual Studio Code
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2415,6 +2426,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step by Step
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Videos
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2648,6 +2705,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step by Step
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Videos
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2678,40 +2770,45 @@
 
 
 <h1 id="compile-with-visual-studio-code">Compile with Visual Studio Code</h1>
-<ul>
+<h2 id="step-by-step">Step by Step</h2>
+<ol>
 <li>Install <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> (vscode).</li>
 <li>In vscode, install the <a href="https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide" target="_blank">PlatformIO
-  Extension</a></li>
+   Extension</a></li>
 <li>Install GIT and enable GIT in vscode -
-  <a href="https://git-scm.com/downloads/" target="_blank">Download</a> -
-  <a href="https://www.jcchouinard.com/install-git-in-vscode/" target="_blank">Instructions</a></li>
+   <a href="https://git-scm.com/downloads/" target="_blank">Download</a> -
+   <a href="https://www.jcchouinard.com/install-git-in-vscode/" target="_blank">Instructions</a></li>
 <li>Clone the <a href="https://github.com/helgeerbe/OpenDTU-OnBattery">code repository</a>.
-  You really have to clone it, do not download and extract a source ZIP file.
-  During the build process the GIT hash gets embedded into the firmware. If you
-  download and extract the source ZIP file a build error will occur.</li>
+   You really have to clone it, do not download and extract a source ZIP file.
+   During the build process the GIT hash gets embedded into the firmware. If you
+   download and extract the source ZIP file a build error will occur.</li>
 <li>In vscode, choose <strong>File</strong> --&gt; <strong>Open Folder</strong> and select the previously
-  downloaded source code (you have to select the folder which contains the
-  <code>platformio.ini</code> and <code>platformio_override.ini</code> files).</li>
+   downloaded source code (you have to select the folder which contains the
+   <code>platformio.ini</code> and <code>platformio_override.ini</code> files).</li>
 <li>Adjust the COM port in the file <code>platformio_override.ini</code> for your
-  USB-to-serial-converter. It occurs twice:<ul>
+   USB-to-serial-converter. It occurs twice:<ul>
 <li><code>upload_port</code></li>
 <li><code>monitor_port</code></li>
 </ul>
 </li>
+<li>Mandatory: <a href="../compile_webapp/">Build the WebApp</a> <strong>before</strong> compiling the firmware.</li>
 <li>Select the arrow button in the blue bottom status bar (PlatformIO: Upload) to
-  compile and upload the firmware. During the compilation, all required
-  libraries are downloaded automatically.</li>
-<li>In Linux, if the upload fails with error messages "Could not open
-  /dev/ttyUSB0, the port doesn't exist", you can check via <code>ls -la
-  /dev/tty*</code> to which group your port belongs to, and then add your user this
-  group via <code>sudo adduser &lt;yourusername&gt; dialout</code> (if you are using
-  <code>arch-linux</code> use: <code>sudo gpasswd -a &lt;yourusername&gt; uucp</code>, this method
-  requires a logout/login of the affected user).</li>
-<li>There are two videos showing these steps:<ul>
+   compile and upload the firmware. During the compilation, all required
+   libraries are downloaded automatically.</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>In Linux, if the upload fails with error messages "Could not open /dev/ttyUSB0,
+the port doesn't exist", you can check via <code>ls -la /dev/tty*</code> to which
+group your port belongs to, and then add your username to this group via <code>sudo
+adduser &lt;yourusername&gt; dialout</code> (if you are using <code>arch-linux</code> use:
+<code>sudo gpasswd -a &lt;yourusername&gt; uucp</code>; this method requires a logout/login
+of the affected user).</p>
+<h2 id="videos">Videos</h2>
+<p>There are two videos showing these steps (possibly not including <a href="../compile_webapp/">building the
+WebApp</a>):</p>
+<ul>
 <li><a href="https://youtu.be/9cA_esv3zeA" target="_blank">Git Clone and compilation</a></li>
 <li><a href="https://youtu.be/xs6TqHn7QWM" target="_blank">Full installation and compilation</a></li>
-</ul>
-</li>
 </ul>
 
 
@@ -2735,7 +2832,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 14, 2024 13:36:02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 22, 2024 09:08:03</span>
   </span>
 
     
