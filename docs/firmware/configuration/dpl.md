@@ -127,10 +127,20 @@ metering happens between the grid and the inverter.
 
 #### Automatic Restart Time :material-form-dropdown:{title="Dropdown"}
 
+!!!danger "Persistent Limit"
+    Manually set a low **persistent** limit when using this feature.
+
 The daily yield of the inverter is usually reset at night when the inverter
 turns off due to lack of light. To reset the daily yield even though the
 inverter is continuously powered by the battery, the inverter can be
 automatically restarted at the desired time.
+
+After the inverter restarts, it starts producing power. How much power that is
+depends on the value set as the persistent limit. Hence the persistent limit
+for inverters managed by the DPL shall be very low if they are automatically
+restarted. Otherwise, a possibly empty battery is drained with possibly high
+power for some time. The DPL will eventually set a new limit or put the
+inverter into standby after it restarted.
 
 ### Solar-Passthrough
 
