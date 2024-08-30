@@ -33,11 +33,3 @@ group your port belongs to, and then add your username to this group via ```sudo
 adduser <yourusername> dialout``` (if you are using ```arch-linux``` use:
 ```sudo gpasswd -a <yourusername> uucp```; this method requires a logout/login
 of the affected user).
-
-## Videos
-
-There are two videos showing these steps (possibly not including [building the
-WebApp](compile_webapp.md)):
-
-* [Git Clone and compilation](https://youtu.be/9cA_esv3zeA){target=_blank}
-* [Full installation and compilation](https://youtu.be/xs6TqHn7QWM){target=_blank}
