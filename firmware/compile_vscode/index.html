@@ -2460,15 +2460,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#videos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Videos
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2729,15 +2720,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#videos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Videos
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2772,27 +2754,26 @@
 <h1 id="compile-with-visual-studio-code">Compile with Visual Studio Code</h1>
 <h2 id="step-by-step">Step by Step</h2>
 <ol>
+<li><a href="https://git-scm.com/downloads/" target="_blank">Download</a> and install Git.</li>
 <li>Install <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> (vscode).</li>
 <li>In vscode, install the <a href="https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide" target="_blank">PlatformIO
-   Extension</a></li>
-<li>Install GIT and enable GIT in vscode -
-   <a href="https://git-scm.com/downloads/" target="_blank">Download</a> -
-   <a href="https://www.jcchouinard.com/install-git-in-vscode/" target="_blank">Instructions</a></li>
-<li>Clone the <a href="https://github.com/helgeerbe/OpenDTU-OnBattery">code repository</a>.
-   You really have to clone it, do not download and extract a source ZIP file.
-   During the build process the GIT hash gets embedded into the firmware. If you
-   download and extract the source ZIP file a build error will occur.</li>
-<li>In vscode, choose <strong>File</strong> --&gt; <strong>Open Folder</strong> and select the previously
-   downloaded source code (you have to select the folder which contains the
-   <code>platformio.ini</code> and <code>platformio_override.ini</code> files).</li>
-<li>Adjust the COM port in the file <code>platformio_override.ini</code> for your
-   USB-to-serial-converter. It occurs twice:<ul>
-<li><code>upload_port</code></li>
-<li><code>monitor_port</code></li>
-</ul>
-</li>
+   Extension</a>.</li>
+<li><a class="glightbox" href="../../assets/images/firmware/vscode_clone.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="right" alt="Clone Source Code" src="../../assets/images/firmware/vscode_clone.png" /></a>
+   Clone the source code repository. Select the <code>Source Control</code> tab on the
+   left, click <code>Clone Repository</code>, and enter the URL
+   <code>https://github.com/helgeerbe/OpenDTU-OnBattery</code>. You really have to clone
+   the source code repository. Do not download and extract a source ZIP file.
+   During the build process the Git hash is embedded into the firmware. If you
+   merely download and extract the source ZIP file a build error will occur, as
+   no Git status can be determined.</li>
 <li>Mandatory: <a href="../compile_webapp/">Build the WebApp</a> <strong>before</strong> compiling the firmware.</li>
-<li>Select the arrow button in the blue bottom status bar (PlatformIO: Upload) to
+<li>Adjust the upload and monitoring port to your system by clicking the plug
+   icon in vscode's bottom statusbar and selecting the respective serial port.
+   <a class="glightbox" href="../../assets/images/firmware/vscode_port.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Set Serial Port" src="../../assets/images/firmware/vscode_port.png" /></a></li>
+<li>Unless you want to compile the default firmware variant, select the
+   appropriate PlatformIO environment in vscode's bottom statusbar.
+   <a class="glightbox" href="../../assets/images/firmware/vscode_environment.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Select Environment" src="../../assets/images/firmware/vscode_environment.png" /></a></li>
+<li>Click the arrow button in vscode's bottom status bar (PlatformIO: Upload) to
    compile and upload the firmware. During the compilation, all required
    libraries are downloaded automatically.</li>
 </ol>
@@ -2803,13 +2784,6 @@ group your port belongs to, and then add your username to this group via <code>s
 adduser &lt;yourusername&gt; dialout</code> (if you are using <code>arch-linux</code> use:
 <code>sudo gpasswd -a &lt;yourusername&gt; uucp</code>; this method requires a logout/login
 of the affected user).</p>
-<h2 id="videos">Videos</h2>
-<p>There are two videos showing these steps (possibly not including <a href="../compile_webapp/">building the
-WebApp</a>):</p>
-<ul>
-<li><a href="https://youtu.be/9cA_esv3zeA" target="_blank">Git Clone and compilation</a></li>
-<li><a href="https://youtu.be/xs6TqHn7QWM" target="_blank">Full installation and compilation</a></li>
-</ul>
 
 
 
@@ -2832,7 +2806,7 @@ WebApp</a>):</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 22, 2024 09:08:03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 30, 2024 17:35:30</span>
   </span>
 
     
