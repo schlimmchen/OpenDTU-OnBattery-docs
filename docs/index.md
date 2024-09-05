@@ -46,7 +46,7 @@ and battery peripherals. It is an alternative to Hoymiles Data Transfer Units
 * Firmware upgrade using the web UI
 * Time zone support
 * Ethernet support
-* Prometheus API endpoint (/api/prometheus/metrics)
+* [Prometheus API endpoint](3rd_party/prometheus_database.md) (/api/prometheus/metrics)
 * English, German and French (partially translated) web interface
 * Displays (SSD1306, SH1106, PCD8544)
 * Status LEDs
