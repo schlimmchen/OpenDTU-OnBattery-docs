@@ -18,3 +18,5 @@
 * [ESP32 Ahoy openDTU PCB housing](https://www.printables.com/model/376840-esp32-ahoy-opendtu-pcb-housing){target=_blank}
 * [Case for openDTU Ahoy Breakout Board (ESP32 and NRF24L01)](https://www.printables.com/model/421083-case-for-opendtu-ahoy-breakout-board-esp32-and-nrf){target=_blank}
 * [Open-DTU CMT2300A with eByte Test-Board E49-900MBL-01 Case](https://makerworld.com/en/models/144736){target=_blank}
+* [Case for openDTU Fusion PCB + POE HAT](https://www.thingiverse.com/thing:6371201) {target=_blank}
+* [Case for openDTU Fusion PCB with 1,54" OLED display](https://www.printables.com/de/model/700045-case-for-opendtu-fusion-pcb-with-154-oled-display) {target=_blank}
