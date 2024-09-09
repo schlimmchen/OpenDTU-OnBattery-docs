@@ -20,15 +20,21 @@ For an easy start, acquire an [OpenDTU Fusion](../3rd_party/opendtu_fusion.md) b
 
 ## Steps to build your own DTU
 
+!!!note "Use of GPIOs"
+    In general, ESP32 chips allow to use any function on any GPIO pin. There
+    are a few restrictions, which are documented at the respective ESP32(-S3)
+    DevKit subpages. Freely wire the logic pins between your ESP32(-S3) module
+    and peripheral components. The important bit is to create and use a
+    matching [device profile](../firmware/device_profiles.md).
+
 1. Determine the [RF module(s)](inverter_overview.md) you need.
-2. Get an ESP32-S3 board.
+2. Get an [ESP32-S3 board](esp32s3_devkit.md).
 3. Use a power suppy with 5 V and 1 A. The USB cable connected to your
    PC/Notebook may be powerful enough or may be not. Also the quality of the
    used USB cable might have an impact.
 4. Wire the ESP32-S3 to the RF module(s).
 5. Wire a [display](display.md) (optional).
 6. [Flash the firmware](../firmware/flash_esp.md) via USB.
-7. Upload a [device profile](../firmware/device_profiles.md) which describes
-   your hardware (or look at the profile first and connect your pins
-   accordingly) using the [Config
-   Managment](../firmware/configuration/config_settings.md).
+7. Create, upload, and select a matching [device profile](../firmware/device_profiles.md)
+   which describes your hardware (or look at a profile first and connect the
+   logic pins accordingly).
