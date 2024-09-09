@@ -1,13 +1,22 @@
 # Available cases
 
-* [ESP32-S3 DevKitC + NRF24](https://www.thingiverse.com/thing:6734089)
+## OpenDTU Fusion
+
+* [OpenDTU Fusion PCB + POE HAT](https://www.thingiverse.com/thing:6371201){target=_blank}
+* [OpenDTU Fusion PCB with 1,54" OLED display](https://www.printables.com/de/model/700045-case-for-opendtu-fusion-pcb-with-154-oled-display){target=_blank}
+
+## ESP32-S3
+
+* [ESP32-S3 DevKitC + NRF24](https://www.thingiverse.com/thing:6734089){target=_blank}
+
+## ESP32
 
 !!!warning "Compatibility"
-
-    Beware that these cases below were originally designed for ESP32 boards
-    with 4 MB of flash memory, which are not fully compatible with
-    OpenDTU-OnBattery. When using such a case, make sure that an upgraded
-    ESP32(-S3) with at least 8 MB of flash storage fits the case as well.
+    Beware that the cases below were originally designed for ESP32 boards with
+    4 MB of flash memory, which are not fully compatible with OpenDTU-OnBattery
+    (lack of support for OTA updates). When using such a case, make sure that
+    an upgraded ESP32(-S3) with at least 8 MB of flash storage fits the case as
+    well.
 
 * [Open DTU box](https://www.thingiverse.com/thing:5435911){target=_blank}
 * [Sól: OpenDTU (ESP32 / NRF24L01+) case](https://www.printables.com/model/293003-sol-opendtu-esp32-nrf24l01-case){target=_blank}
