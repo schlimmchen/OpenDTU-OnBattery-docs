@@ -2796,19 +2796,26 @@ flash memory.</p>
 <p>Please see the <a href="inverter_overview/">inverter overview</a> to see if your inverter is supported and to determine the required RF module.</p>
 <p>For an easy start, acquire an <a href="../3rd_party/opendtu_fusion/">OpenDTU Fusion</a> board.</p>
 <h2 id="steps-to-build-your-own-dtu">Steps to build your own DTU</h2>
+<div class="admonition note">
+<p class="admonition-title">Use of GPIOs</p>
+<p>In general, ESP32 chips allow to use any function on any GPIO pin. There
+are a few restrictions, which are documented at the respective ESP32(-S3)
+DevKit subpages. Freely wire the logic pins between your ESP32(-S3) module
+and peripheral components. The important bit is to create and use a
+matching <a href="../firmware/device_profiles/">device profile</a>.</p>
+</div>
 <ol>
 <li>Determine the <a href="inverter_overview/">RF module(s)</a> you need.</li>
-<li>Get an ESP32-S3 board.</li>
+<li>Get an <a href="esp32s3_devkit/">ESP32-S3 board</a>.</li>
 <li>Use a power suppy with 5 V and 1 A. The USB cable connected to your
    PC/Notebook may be powerful enough or may be not. Also the quality of the
    used USB cable might have an impact.</li>
 <li>Wire the ESP32-S3 to the RF module(s).</li>
 <li>Wire a <a href="display/">display</a> (optional).</li>
 <li><a href="../firmware/flash_esp/">Flash the firmware</a> via USB.</li>
-<li>Upload a <a href="../firmware/device_profiles/">device profile</a> which describes
-   your hardware (or look at the profile first and connect your pins
-   accordingly) using the <a href="../firmware/configuration/config_settings/">Config
-   Managment</a>.</li>
+<li>Create, upload, and select a matching <a href="../firmware/device_profiles/">device profile</a>
+   which describes your hardware (or look at a profile first and connect the
+   logic pins accordingly).</li>
 </ol>
 
 
@@ -2832,7 +2839,7 @@ flash memory.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 14, 2024 14:16:08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 9, 2024 21:05:54</span>
   </span>
 
     
