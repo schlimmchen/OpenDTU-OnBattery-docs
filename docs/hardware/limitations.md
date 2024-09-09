@@ -76,3 +76,15 @@ network.
 On ESP32-S3 using firmware variant `generic_esp32s3_usb` (all environments that
 define `ARDUINO_USB_MODE=1` and `ARDUINO_USB_CDC_ON_BOOT=1`), the messages are
 instead available on the virtual serial interface of the native USB connection.
+
+## SPI Busses
+
+ESP32 and ESP32-S3 chips provide four seperate SPI interfaces. Two of them are
+reserved for communicating with the flash and/or PSRAM. The remaining two are
+free to use for peripherals. This means only two SPI peripherals can be
+connected at a time. The following peripherals need an SPI bus each:
+
+* NRF24 radio module
+* CMT2300 radio module
+* Huawei CAN interface
+* Some diplays
