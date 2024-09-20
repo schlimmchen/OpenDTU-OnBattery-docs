@@ -174,7 +174,7 @@ nav:
       - firmware/howto/migrate_generic.md
       - firmware/howto/upgrade_8mb.md
       - firmware/howto/upgrade_upstream.md
-    - Compiling:
+    - Development:
       - firmware/compile_vscode.md
       - firmware/compile_cli.md
       - firmware/compile_webapp.md
