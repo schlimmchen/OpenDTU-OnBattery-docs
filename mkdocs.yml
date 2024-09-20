@@ -175,9 +175,9 @@ nav:
       - firmware/howto/upgrade_8mb.md
       - firmware/howto/upgrade_upstream.md
     - Development:
+      - firmware/compile_webapp.md
       - firmware/compile_vscode.md
       - firmware/compile_cli.md
-      - firmware/compile_webapp.md
     - License: license.md
   - 3rd Party:
       - 3rd_party/opendtu_fusion.md
