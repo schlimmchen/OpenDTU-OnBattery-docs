@@ -21,7 +21,9 @@ same).
 
 ## Install prerequisits
 
-* Install Node.js v20 to be able to work with the WebApp.
+* Determine the version of Node.js to be used: See the value for `node-version`
+  in the [Github workflow][3], which is the canonical version to use.
+* Install Node.js to be able to work with the WebApp.
 * The `yarn` package manager is required to install Node.js packages and to
   execute commands related to the WebApp. To make `yarn` available, you should
   enable `corepack`, which is shipped together with Node.js. `corepack`
@@ -30,18 +32,19 @@ same).
 
 === "Windows :material-microsoft-windows:"
 
-    * Install Node.js v20 using the [prebuilt installer][1]{target=_blank} (use
+    * Install Node.js using the [prebuilt installer][1]{target=_blank} (use
       the default settings during installation).
     * Execute `corepack enable` in an elevated command prompt (run command
       prompt as administrator).
 
 === "Debian/Ubuntu Linux :material-linux:"
 
-    * Install Node.js v20 from [nodesource][2]{target=_blank}.
+    * Install Node.js from [nodesource][2]{target=_blank}.
     * Execute `sudo corepack enable`.
 
 [1]: https://nodejs.org/en/download/prebuilt-installer
 [2]: https://github.com/nodesource/distributions
+[3]: https://github.com/helgeerbe/OpenDTU-OnBattery/blob/development/.github/workflows/build.yml
 
 ## Building the WebApp
 
