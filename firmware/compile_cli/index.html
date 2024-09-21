@@ -16,7 +16,7 @@
         <link rel="prev" href="../compile_vscode/">
       
       
-        <link rel="next" href="../compile_webapp/">
+        <link rel="next" href="../../license/">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -2376,7 +2376,7 @@
             
   
   <span class="md-ellipsis">
-    Compiling
+    Development
   </span>
   
 
@@ -2386,9 +2386,30 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_11">
             <span class="md-nav__icon md-icon"></span>
-            Compiling
+            Development
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compile_webapp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working with the WebApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2485,27 +2506,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../compile_webapp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Compile WebApp
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -2755,6 +2755,8 @@
 <h2 id="step-by-step">Step by Step</h2>
 <ol>
 <li>Install <a href="https://platformio.org/install/cli" target="_blank">PlatformIO Core</a> (PIO).</li>
+<li>Install the prerequisits to be able to <a href="../compile_webapp/#install-prerequisits">build the
+   WebApp</a>.</li>
 <li>Clone the <a href="https://github.com/helgeerbe/OpenDTU-OnBattery">source code repository</a>.
    You really have to clone the source code repository. Do not download and
    extract a source ZIP file. During the build process the Git hash is embedded
@@ -2766,7 +2768,6 @@
 <li><code>monitor_port</code></li>
 </ul>
 </li>
-<li>Mandatory: <a href="../compile_webapp/">Build the WebApp</a> <strong>before</strong> compiling the firmware.</li>
 <li>Build the firmware: <code>platformio run -e generic_esp32s3</code> (chose a suitable PIO environment)</li>
 <li>Upload to ESP32 module: <code>platformio run -e generic_esp32s3 -t upload</code></li>
 </ol>
@@ -2797,7 +2798,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 30, 2024 17:38:45</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 21, 2024 21:25:02</span>
   </span>
 
     
