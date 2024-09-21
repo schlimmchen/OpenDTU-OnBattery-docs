@@ -35,6 +35,19 @@ the respective parameters. If any parameter is not set, the default value `-1`
 
 ## Structure of the JSON file
 
+!!!note "GPIO Numbers"
+    Please be aware that the numerical values used in the device profile JSON
+    file are **ESP32 chip GPIO numbers** (NOT physical pin numbers). Refer to
+    the documentation of your respective ESP32 board to learn at what physical
+    pin header a particular ESP32 GPIO is available.
+
+!!!warning "GPIO Numbering on different chips"
+    Some GPIO numbers available on one particular chip may be unavailable on
+    another. Keep this in mind when upgrading, e.g., from an ESP32 to an
+    ESP32-S3. Also, different boards may expose different GPIOs on their
+    respective pin headers. Always check which GPIOs are actually available on
+    your board before choosing which GPIOs to use.
+
 !!!note "Examples"
     These profiles are partially incomplete and merely serve as example snippets.
 
@@ -170,10 +183,6 @@ the respective parameters. If any parameter is not set, the default value `-1`
     }
 ]
 ```
-
-!!! note "Note"
-    Please be aware that numerical values used in the profile `.json` file are
-    **ESP chip GPIO numbers** (NOT physical Pin numbers).
 
 ## Implemented configuration values
 
