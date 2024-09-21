@@ -2816,6 +2816,21 @@ the respective parameters. If any parameter is not set, the default value <code>
 ("not in use") will be effective.</p>
 <h2 id="structure-of-the-json-file">Structure of the JSON file</h2>
 <div class="admonition note">
+<p class="admonition-title">GPIO Numbers</p>
+<p>Please be aware that the numerical values used in the device profile JSON
+file are <strong>ESP32 chip GPIO numbers</strong> (NOT physical pin numbers). Refer to
+the documentation of your respective ESP32 board to learn at what physical
+pin header a particular ESP32 GPIO is available.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">GPIO Numbering on different chips</p>
+<p>Some GPIO numbers available on one particular chip may be unavailable on
+another. Keep this in mind when upgrading, e.g., from an ESP32 to an
+ESP32-S3. Also, different boards may expose different GPIOs on their
+respective pin headers. Always check which GPIOs are actually available on
+your board before choosing which GPIOs to use.</p>
+</div>
+<div class="admonition note">
 <p class="admonition-title">Examples</p>
 <p>These profiles are partially incomplete and merely serve as example snippets.</p>
 </div>
@@ -2950,11 +2965,6 @@ the respective parameters. If any parameter is not set, the default value <code>
 </span><span id="__span-0-129"><a id="__codelineno-0-129" name="__codelineno-0-129" href="#__codelineno-0-129"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-0-130"><a id="__codelineno-0-130" name="__codelineno-0-130" href="#__codelineno-0-130"></a><span class="p">]</span>
 </span></code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please be aware that numerical values used in the profile <code>.json</code> file are
-<strong>ESP chip GPIO numbers</strong> (NOT physical Pin numbers).</p>
-</div>
 <h2 id="implemented-configuration-values">Implemented configuration values</h2>
 <table>
 <thead>
@@ -3224,7 +3234,7 @@ the respective parameters. If any parameter is not set, the default value <code>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 15, 2024 11:39:16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 21, 2024 19:58:37</span>
   </span>
 
     
