@@ -119,6 +119,11 @@ assumed that you know what you are doing.
             "type": 2,
             "data": 21,
             "clk": 22
+        },
+        "powermeter": {
+            "rx": 25,
+            "tx": 26,
+            "dere": 27
         }
     },
     {
@@ -182,6 +187,27 @@ assumed that you know what you are doing.
             "rx2": 23,
             "tx2": -1
         }
+    },
+    {
+        "name": "OpenDTU Fusion v2 with NRF24, MPPT, SDM72",
+        "nrf24": {
+            "miso": 48,
+            "mosi": 35,
+            "clk": 36,
+            "irq": 47,
+            "en": 38,
+            "cs": 37
+        },
+        "victron": {
+            "rx": 22,
+            "tx": -1,
+        },
+        "powermeter": {
+            "rx": 16,
+            "tx": 45,
+            "rxen": 15,
+            "txen": 46
+        }
     }
 ]
 ```
@@ -242,4 +268,6 @@ assumed that you know what you are doing.
 | huawei.power    | number    | Power Pin for Huawei power control (e.g. using slot detect) |
 | powermeter.rx   | number    | Serial power meter receive pin |
 | powermeter.tx   | number    | Serial power meter transmit pin (required for SDM, invalid for SML) |
-| powermeter.dere | number    | Serial power meter "driver/receiver enable" pin (only for SDM, optional) |
+| powermeter.dere | number    | Serial power meter "driver/receiver enable" pin (only for SDM, optional, can't be combined with rxen+txen) |
+| powermeter.rxen | number    | Serial power meter "receiver enable" pin (only for SDM, optional, requires txen, can't be combined with dere) |
+| powermeter.txen | number    | Serial power meter "driver enable" pin (only for SDM, optional, requires rxen, can't be combined with dere) |
