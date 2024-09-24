@@ -622,7 +622,7 @@
             
   
   <span class="md-ellipsis">
-    ESP32 Modules
+    ESP32 Boards
   </span>
   
 
@@ -632,7 +632,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            ESP32 Modules
+            ESP32 Boards
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -647,7 +647,7 @@
         
   
   <span class="md-ellipsis">
-    ESP32 Module Recommendations
+    Selecting a Board
   </span>
   
 
@@ -2760,12 +2760,11 @@ at least 8 MB of flash memory, making it possible to use OTA updates.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Reserved Pins</p>
-<p>Modules with 8 MB of PSRAM or 16 MB or more of flash memory use an octal
-SPI interface. On these modules, pins GPIO 35, 36, and 37, which are
-usually wired to the DevKit board's pin header, are in use for the internal
-communication between ESP32-S3 and SPI flash/PSRAM memory. Thus these pins
-are <strong>not</strong> available for external use, even though they are wired to the
-DevKit board's pin header.</p>
+<p>ESP32-S3 modules with 8 MB of PSRAM use an octal SPI interface. On these
+modules, pins GPIO 35, 36, and 37, which are usually wired to the board's
+pin header, are in use for the internal communication between ESP32-S3 and
+PSRAM. Therefore, these pins are <strong>not</strong> available for external use, even
+though they are wired to the board's pin header.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Avoid UART0</p>
@@ -2774,8 +2773,8 @@ DevKit board's pin header.</p>
 </div>
 <h2 id="overview">Overview</h2>
 <p>The following is an overview of the original Espressif ESP32-S3 DevKit (USB-C
-version). Many modules offered on well-known larger Chinese or local web stores
-are usually merely compatible imitations.</p>
+version) board. Many boards offered on well-known larger Chinese or local web
+stores are usually merely compatible imitations.</p>
 <p><a class="glightbox" href="../../assets/images/hardware/espressif_esp32_s3_devkit_overview.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/hardware/espressif_esp32_s3_devkit_overview.jpg" /></a></p>
 <h2 id="firmware">Firmware</h2>
 <p>Use variant <code>generic_esp32s3_usb</code> on these boards. Three hardware UARTs will be
@@ -2803,7 +2802,7 @@ the native USB stack of the ESP32-S3.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 9, 2024 21:06:27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 24, 2024 11:29:32</span>
   </span>
 
     

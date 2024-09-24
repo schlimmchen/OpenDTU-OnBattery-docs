@@ -620,7 +620,7 @@
             
   
   <span class="md-ellipsis">
-    ESP32 Modules
+    ESP32 Boards
   </span>
   
 
@@ -630,7 +630,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            ESP32 Modules
+            ESP32 Boards
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -645,7 +645,7 @@
         
   
   <span class="md-ellipsis">
-    ESP32 Module Recommendations
+    Selecting a Board
   </span>
   
 
@@ -2811,7 +2811,10 @@
 </table>
 <h2 id="description">Description</h2>
 <p>The CMT2300A module is a 868MHz RF module. It is important to get a module which supports SPI communication. Currently only the <a href="https://www.ebyte.com/en/pdf-down.aspx?id=2506" target="_blank">EBYTE E49-900M20S</a> is supported as a standalone module, or use the <a href="../../3rd_party/opendtu_fusion/">OpenDTU Fusion PCB</a> instead.</p>
-<p>The CMT2300A uses 3-Wire half duplex SPI communication. Due to this fact it currently requires a separate SPI bus. If you want to run the CMT2300A module on the same ESP32 as a NRF24L01+ module or a PCD8544 display make sure you get an ESP32 which supports 2 SPI busses. <strong>Currently the SPI bus for the CMT2300A is hardcoded to number 2</strong> (this will change in the future). The current limitation of the ESP32's two SPI busses makes some combinations of hardware (HMS Series Inverter and Huawei AC charger) impossible to use.</p>
+<p>The CMT2300A uses 3-Wire half duplex SPI communication. Due to this fact it
+currently requires a separate SPI bus. If you want to run the CMT2300A module
+on the same ESP32 as a NRF24L01+ module or a PCD8544 display make sure you get
+an ESP32 which supports 2 SPI busses (use an ESP32-S3).</p>
 <p>Buy your hardware from a trusted source, at best from a dealer/online shop in your country where you have support and the right to return non-functional hardware. When you want to buy from Amazon, AliExpress, eBay etc., take note that there is a lot of low-quality or fake hardware offered. Read customer comments and ratings carefully!</p>
 <p>A heavily incomplete list of shops is:</p>
 <div class="admonition note">
@@ -2916,7 +2919,7 @@ configured using a <a href="../../firmware/device_profiles/">Device Profile</a>.
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 14, 2024 14:12:48</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 24, 2024 11:35:33</span>
   </span>
 
     

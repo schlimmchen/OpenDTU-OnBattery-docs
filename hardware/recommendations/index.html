@@ -24,7 +24,7 @@
     
     
       
-        <title>ESP32 Module Recommendations - OpenDTU-OnBattery Documentation</title>
+        <title>Selecting a Board - OpenDTU-OnBattery Documentation</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#esp32-module-recommendations" class="md-skip">
+        <a href="#selecting-a-board" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ESP32 Module Recommendations
+              Selecting a Board
             
           </span>
         </div>
@@ -622,7 +622,7 @@
             
   
   <span class="md-ellipsis">
-    ESP32 Modules
+    ESP32 Boards
   </span>
   
 
@@ -632,7 +632,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            ESP32 Modules
+            ESP32 Boards
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -656,7 +656,7 @@
           
   
   <span class="md-ellipsis">
-    ESP32 Module Recommendations
+    Selecting a Board
   </span>
   
 
@@ -667,7 +667,7 @@
         
   
   <span class="md-ellipsis">
-    ESP32 Module Recommendations
+    Selecting a Board
   </span>
   
 
@@ -689,6 +689,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions-and-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions and Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#flash-memory" class="md-nav__link">
     <span class="md-ellipsis">
       Flash Memory
@@ -701,6 +719,24 @@
   <a href="#esp32-vs-esp32-s3" class="md-nav__link">
     <span class="md-ellipsis">
       ESP32 vs. ESP32-S3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esp32-s3-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32-S3 Board
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-mb-of-flash-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      16 MB of Flash Memory
     </span>
   </a>
   
@@ -2701,6 +2737,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions-and-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions and Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#flash-memory" class="md-nav__link">
     <span class="md-ellipsis">
       Flash Memory
@@ -2713,6 +2767,24 @@
   <a href="#esp32-vs-esp32-s3" class="md-nav__link">
     <span class="md-ellipsis">
       ESP32 vs. ESP32-S3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esp32-s3-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32-S3 Board
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-mb-of-flash-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      16 MB of Flash Memory
     </span>
   </a>
   
@@ -2749,121 +2821,186 @@
   
 
 
-<h1 id="esp32-module-recommendations">ESP32 Module Recommendations</h1>
+<h1 id="selecting-a-board">Selecting a Board</h1>
+<h2 id="tldr">TL;DR</h2>
+<p>If you insist on wiring up the hardware yourself instead of using an
+<a href="../../3rd_party/opendtu_fusion/">integrated solution</a>, acquire an ESP32-S3
+DevKit Board with a <code>N16R2</code> type of module.</p>
+<h2 id="definitions-and-background">Definitions and Background</h2>
+<ul>
+<li>There are variants of the ESP32 series other than <code>ESP32</code> and <code>ESP32-S3</code>.
+  OpenDTU-OnBattery is mostly concerned with the aforementioned two types.</li>
+<li><a class="glightbox" href="../../assets/images/hardware/esp32_chip.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="right" alt="SoC" src="../../assets/images/hardware/esp32_chip.png" width="150" /></a>
+  <strong>Chip</strong> or <strong>MCU</strong> or <strong>SoC</strong>: Refers to the ESP32(-S3) silicon chip in a
+  plastic package without any PCB or external components.<ul>
+<li>This part determines whether you are using an <code>ESP32</code> or an <code>ESP32-S3</code>.</li>
+<li>Example part numbers: <code>ESP32-U4WDH</code>, <code>ESP32-S3</code>, <code>ESP32-S3R2</code>, or
+  <code>ESP32-S3FH4R2</code>.</li>
+<li>Some chips have integrated flash and/or PSRAM, while others do not.</li>
+<li>Details can be found in the <a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf">ESP32 datasheet</a>, <a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf">ESP32-S3
+  datasheet</a>, or even the <a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf">ESP32-S3 Technical Reference Manual</a>.</li>
+<li>These parts are manufactured by Espressif.</li>
+<li>A popular cosumer product integrating these chips directly are Shelly
+  devices.</li>
+</ul>
+</li>
+<li><a class="glightbox" href="../../assets/images/hardware/esp32_module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="right" alt="Module" src="../../assets/images/hardware/esp32_module.png" width="150" /></a>
+  <strong>Module</strong>: Refers to an assembled part consisting of an ESP32(-S3) chip and
+  external components, soldered onto a PCB, and hidden under an RF shield.<ul>
+<li>Example part numbers: <code>ESP32-WROOM-32U</code>, <code>ESP32-S3-WROOM-1-N4</code>, or
+  <code>ESP32-S3-WROOM-2-N16R8V</code>.</li>
+<li>Many modules add SPI flash memory and/or PSRAM, which are external to the
+  SoC.</li>
+<li>Details can be found in the respective datasheets (non-exhaustive list):
+  <a href="https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf">ESP32-WROOM-32</a>, <a href="https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf">ESP32-WROOM-32D/U</a>, <a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">ESP32-S3-WROOM-1</a>, or
+  <a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-2_datasheet_en.pdf">ESP32-S3-WROOM-2</a>.</li>
+<li>These modules are orginally manufactured by Espressif, but there are
+  compatible knock-off products advertised under identical part numbers.</li>
+<li>Using these modules simplifies integration into custom applications.
+  Popular consumer products using these modules are ESP32-based relay
+  boards.</li>
+</ul>
+</li>
+<li><a class="glightbox" href="../../assets/images/hardware/esp32_board.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="right" alt="Module" src="../../assets/images/hardware/esp32_board.png" width="150" /></a>
+  <strong>Board</strong> or <strong>PCB</strong>: Refers to the PCB which integrates an ESP32(-S3) module
+  with a power supply, USB connector(s), pin headers, and more components to
+  facilitate practical use of the module.<ul>
+<li>Example parts: <code>ESP32-DevKitC</code>, <code>ESP32-S3-DevKitC-1</code>, <a href="../../3rd_party/opendtu_fusion/">OpenDTU
+  Fusion</a>.</li>
+<li>Espressif originally manufactured the aforementioned development kits,
+  which became a de facto standard for hobbyists. Third party manufacturers
+  sell compatible boards using identical names.</li>
+</ul>
+</li>
+</ul>
 <h2 id="flash-memory">Flash Memory</h2>
 <p>Due to the growing size of the firmware binaries, an ESP32 module with at least
-8 MB is required to be able to use OTA updates. You may run OpenDTU-OnBattery
-on ESP32 boards with only 4 MB of flash memory, but you will have to update the
+8 MB of flash memory is required to be able to use <a href="../../firmware/update/">OTA updates</a>. You may run OpenDTU-OnBattery
+on ESP32-based boards with only 4 MB of flash memory, but you will have to update the
 firmware on these boards using the USB connection, i.e., physical access is
 required.</p>
 <h2 id="esp32-vs-esp32-s3">ESP32 vs. ESP32-S3</h2>
 <p>You should prefer an ESP32-S3 (note the "S3"). The ESP32-S3 has more GPIOs (not
 all may be pinned out) and a slightly more efficient core. More importantly, it
 has native USB support, freeing one hardware UART.</p>
-<p>Make sure that the board, to which the ESP32-S3 is soldered, actually uses the
-native USB capability, such that the third hardware UART becomes available.
-Look out for a USB to UART transceiver. If there is one on the board, the chip
-is possibly not connected natively to the USB port. There are boards with two
-USB connectors, where one does connect natively to the ESP32. In that case, the
-board is fine.</p>
+<h2 id="esp32-s3-board">ESP32-S3 Board</h2>
 <div class="admonition warning">
 <p class="admonition-title">ESP32-S3 Reserved Pins</p>
-<p>Modules with 8 MB of PSRAM or 16 MB or more of flash memory use an octal
-SPI interface. On these modules, pins GPIO 35, 36, and 37, which are
-usually wired to the DevKit board's pin header, are in use for the internal
-communication between ESP32-S3 and SPI flash/PSRAM memory. Thus these pins
-are <strong>not</strong> available for external use, even though they are wired to the
-DevKit board's pin header.</p>
+<p>ESP32-S3 modules with 8 MB of PSRAM use an octal SPI interface. On these
+modules, pins GPIO 35, 36, and 37, which are usually wired to the board's
+pin header, are in use for the internal communication between ESP32-S3 and
+PSRAM. Therefore, these pins are <strong>not</strong> available for external use, even
+though they are wired to the board's pin header.</p>
 </div>
+<p>Use a board which integrates one of the following modules:</p>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Flash</th>
-<th>PSRAM</th>
+<th style="text-align: right;">ESP32-S3-WROOM-...</th>
+<th style="text-align: right;">Flash</th>
+<th style="text-align: right;">PSRAM</th>
 <th>Antenna</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ESP32-S3-WROOM-1U-N16R8</td>
-<td>16 MB</td>
-<td>8 MB</td>
+<td style="text-align: right;">...1U-N16R8</td>
+<td style="text-align: right;">16 MB</td>
+<td style="text-align: right;">8 MB</td>
 <td>external</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1-N16R8</td>
-<td>16 MB</td>
-<td>8 MB</td>
+<td style="text-align: right;">...1-N16R8</td>
+<td style="text-align: right;">16 MB</td>
+<td style="text-align: right;">8 MB</td>
 <td>PCB Trace</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1U-N16R2</td>
-<td>16 MB</td>
-<td>2 MB</td>
+<td style="text-align: right;">...1U-N16R2</td>
+<td style="text-align: right;">16 MB</td>
+<td style="text-align: right;">2 MB</td>
 <td>external</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1-N16R2</td>
-<td>16 MB</td>
-<td>2 MB</td>
+<td style="text-align: right;">...1-N16R2</td>
+<td style="text-align: right;">16 MB</td>
+<td style="text-align: right;">2 MB</td>
 <td>PCB Trace</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1U-N16</td>
-<td>16 MB</td>
-<td>-</td>
+<td style="text-align: right;">...1U-N16</td>
+<td style="text-align: right;">16 MB</td>
+<td style="text-align: right;">-</td>
 <td>external</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1-N16</td>
-<td>16 MB</td>
-<td>-</td>
+<td style="text-align: right;">...1-N16</td>
+<td style="text-align: right;">16 MB</td>
+<td style="text-align: right;">-</td>
 <td>PCB Trace</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1U-N8R8</td>
-<td>8 MB</td>
-<td>8 MB</td>
+<td style="text-align: right;">...1U-N8R8</td>
+<td style="text-align: right;">8 MB</td>
+<td style="text-align: right;">8 MB</td>
 <td>external</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1-N8R8</td>
-<td>8 MB</td>
-<td>8 MB</td>
+<td style="text-align: right;">...1-N8R8</td>
+<td style="text-align: right;">8 MB</td>
+<td style="text-align: right;">8 MB</td>
 <td>PCB Trace</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1U-N8R2</td>
-<td>8 MB</td>
-<td>2 MB</td>
+<td style="text-align: right;">...1U-N8R2</td>
+<td style="text-align: right;">8 MB</td>
+<td style="text-align: right;">2 MB</td>
 <td>external</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1-N8R2</td>
-<td>8 MB</td>
-<td>2 MB</td>
+<td style="text-align: right;">...1-N8R2</td>
+<td style="text-align: right;">8 MB</td>
+<td style="text-align: right;">2 MB</td>
 <td>PCB Trace</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1U-N8</td>
-<td>8 MB</td>
-<td>-</td>
+<td style="text-align: right;">...1U-N8</td>
+<td style="text-align: right;">8 MB</td>
+<td style="text-align: right;">-</td>
 <td>external</td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1-N8</td>
-<td>8 MB</td>
-<td>-</td>
+<td style="text-align: right;">...1-N8</td>
+<td style="text-align: right;">8 MB</td>
+<td style="text-align: right;">-</td>
+<td>PCB Trace</td>
+</tr>
+<tr>
+<td style="text-align: right;">...2-N16R8V</td>
+<td style="text-align: right;">16 MB</td>
+<td style="text-align: right;">8 MB</td>
+<td>PCB Trace</td>
+</tr>
+<tr>
+<td style="text-align: right;">...2-N32R8V</td>
+<td style="text-align: right;">32 MB</td>
+<td style="text-align: right;">8 MB</td>
 <td>PCB Trace</td>
 </tr>
 </tbody>
 </table>
+<p>Make sure that the board actually uses the native USB capability, such that the
+third hardware UART becomes available. There are boards with two USB
+connectors, where one connectnatively to the ESP32. In that case, the board is
+fine. On board with only one USB connector, look out for a USB to UART
+transceiver. If there is one on the board, the chip is possibly not connected
+natively to the USB port.</p>
+<h2 id="16-mb-of-flash-memory">16 MB of Flash Memory</h2>
 <p>You will not be able to leverage 16 MB of flash memory with OpenDTU-OnBattery
 any time soon. However, given the price difference, you might want to go for a
 version with 16 MB, allowing the module/board to be reused in a different
 project eventually.</p>
-<p><a class="glightbox" href="../../assets/images/hardware/PriceExampleESP32-S3Versions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../assets/images/hardware/PriceExampleESP32-S3Versions.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/hardware/PriceExampleESP32-S3Versions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ESP32-S3 Pricing" src="../../assets/images/hardware/PriceExampleESP32-S3Versions.png" /></a></p>
 
 
 
@@ -2886,7 +3023,7 @@ project eventually.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 9, 2024 21:06:27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 24, 2024 11:29:32</span>
   </span>
 
     
