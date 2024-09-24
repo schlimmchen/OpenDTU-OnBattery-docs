@@ -22,8 +22,8 @@ guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-referenc
 ## Overview
 
 The following is an overview of the original Espressif ESP32-S3 DevKit (USB-C
-version). Many modules offered on well-known larger Chinese or local web stores
-are usually merely compatible imitations.
+version) board. Many boards offered on well-known larger Chinese or local web
+stores are usually merely compatible imitations.
 
 ![](../assets/images/hardware/espressif_esp32_s3_devkit_overview.jpg)
 

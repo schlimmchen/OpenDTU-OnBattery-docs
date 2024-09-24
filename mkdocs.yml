@@ -106,7 +106,7 @@ nav:
   - Hardware:
       - hardware/index.md
       - hardware/inverter_overview.md
-      - ESP32 Modules:
+      - ESP32 Boards:
         - hardware/recommendations.md
         - hardware/esp32s3_devkit.md
         - hardware/esp32nodemcu_38pin.md
