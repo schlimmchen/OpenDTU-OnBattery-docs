@@ -117,11 +117,10 @@ more background information.
 
 ## Exception for ESP32-S3
 
-For an unknown amount of releases, you may still flash the non-factory firmware
-image over-the-air onto an ESP32-S3 board, i.e., without updating the partition
-layout. This works as the firmware is slightly smaller for ESP32-S3 as it is
-for ESP32. The newer releases still fit the old partition layout for ESP32-S3.
-There is no estimate what future release will be too large to fit the old
+You may flash the non-factory firmware image version 2024.08.18 or 2024.09.11
+over-the-air onto an ESP32-S3 board, i.e., without updating the partition
+layout. This works as the firmware is slightly smaller for an ESP32-S3 as it is
+for an ESP32. Only the two releases listed above still fit the old partition
 layout for ESP32-S3. An attempt to write an image that is too large using OTA
 will fail gracefully. You will then need to upgrade the partition layout by
 flashing the factory image using the USB connection to continue upgrading.
