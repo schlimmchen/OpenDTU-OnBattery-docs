@@ -9,12 +9,11 @@ guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-referenc
     at least 8 MB of flash memory, making it possible to use OTA updates.
 
 !!!warning "Reserved Pins"
-    Modules with 8 MB of PSRAM or 16 MB or more of flash memory use an octal
-    SPI interface. On these modules, pins GPIO 35, 36, and 37, which are
-    usually wired to the DevKit board's pin header, are in use for the internal
-    communication between ESP32-S3 and SPI flash/PSRAM memory. Thus these pins
-    are **not** available for external use, even though they are wired to the
-    DevKit board's pin header.
+    ESP32-S3 modules with 8 MB of PSRAM use an octal SPI interface. On these
+    modules, pins GPIO 35, 36, and 37, which are usually wired to the board's
+    pin header, are in use for the internal communication between ESP32-S3 and
+    PSRAM. Therefore, these pins are **not** available for external use, even
+    though they are wired to the board's pin header.
 
 !!!warning "Avoid UART0"
     Avoid using UART0 (GPIO43, GPIO44) to connect a peripheral, as it is

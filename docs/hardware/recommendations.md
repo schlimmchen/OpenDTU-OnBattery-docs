@@ -22,12 +22,11 @@ USB connectors, where one does connect natively to the ESP32. In that case, the
 board is fine.
 
 !!!warning "ESP32-S3 Reserved Pins"
-    Modules with 8 MB of PSRAM or 16 MB or more of flash memory use an octal
-    SPI interface. On these modules, pins GPIO 35, 36, and 37, which are
-    usually wired to the DevKit board's pin header, are in use for the internal
-    communication between ESP32-S3 and SPI flash/PSRAM memory. Thus these pins
-    are **not** available for external use, even though they are wired to the
-    DevKit board's pin header.
+    ESP32-S3 modules with 8 MB of PSRAM use an octal SPI interface. On these
+    modules, pins GPIO 35, 36, and 37, which are usually wired to the board's
+    pin header, are in use for the internal communication between ESP32-S3 and
+    PSRAM. Therefore, these pins are **not** available for external use, even
+    though they are wired to the board's pin header.
 
 | Name                    | Flash | PSRAM | Antenna   |
 | ----------------------- | ----- | ----- | --------- |
