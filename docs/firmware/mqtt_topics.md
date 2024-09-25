@@ -43,6 +43,12 @@ serial will be replaced with the serial number of the inverter.
 | `[serial]/device/fwbuilddatetime`         | R     | Build date / time of inverter firmware               |                            |
 | `[serial]/device/hwpartnumber`            | R     | Hardware part number of the inverter                 |                            |
 | `[serial]/device/hwversion`               | R     | Hardware version of the inverter                     |                            |
+| `[serial]/radio/tx_request`               | R     | Amount of sent packet requests                       |                            |
+| `[serial]/radio/tx_re_request`            | R     | Amount of sent fragment resend requests              |                            |
+| `[serial]/radio/rx_success`               | R     | Amount of successfull received packets               |                            |
+| `[serial]/radio/rx_fail_nothing`          | R     | Amount of failed packets, nothing was received       |                            |
+| `[serial]/radio/rx_fail_partial`          | R     | Amount of failed packets, some fragments where missing |                            |
+| `[serial]/radio/rx_fail_corrupt`          | R     | Amount of failed packets, payload corrupt            |                            |
 | `[serial]/status/reachable`               | R     | Indicates whether the inverter is reachable          | 0 or 1                     |
 | `[serial]/status/producing`               | R     | Indicates whether the inverter is producing AC power | 0 or 1                     |
 | `[serial]/status/last_update`             | R     | Unix timestamp of last inverter statistics udpate    | seconds since JAN 01 1970 (UTC) |
@@ -90,6 +96,7 @@ cmd topics are used to set values. Status topics are updated from values set in 
 | `[serial]/cmd/limit_nonpersistent_relative` | W     | Set the inverter limit as a percentage of total production capability. The  value will reset to the last persistent value at night without power. The updated value will show up in the web GUI and limit_relative topic immediatly. The value must be published non-retained, otherwise it will be ignored! | %                          |
 | `[serial]/cmd/limit_nonpersistent_absolute` | W     | Set the inverter limit as a absolute value. The  value will reset to the last persistent value at night without power. The updated value will set immediatly within the inverter but show up in the web GUI and limit_relative topic after around 4 minutes. If you are using a already known inverter (known Hardware ID), the updated value will show up within a few seconds. The value must be published non-retained, otherwise it will be ignored! | Watt (W)                   |
 | `[serial]/cmd/power`                        | W      | Turn the inverter on (1) or off (0)                 | 0 or 1                     |
+| `[serial]/cmd/reset_rf_stats`               | W      | Reset the radio statistics                          | 1                          |
 | `[serial]/cmd/restart`                      | W      | Restarts the inverters (also resets YieldDay)       | 1                          |
 
 ## Victron MPPT topics
