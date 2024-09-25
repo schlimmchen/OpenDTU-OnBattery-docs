@@ -10,7 +10,12 @@ The base topic, as configured in the web GUI is prepended to all follwing topics
 | `dtu/hostname`                            | R     | Current hostname of the dtu (as set in web GUI)      |                            |
 | `dtu/rssi`                                | R     | Wi-Fi network quality                                | db value                   |
 | `dtu/status`                              | R     | Indicates whether OpenDTU-OnBattery network is reachable | online /  offline      |
+| `dtu/temperature`                         | R     | Temperature of the ESP32                             | °C                         |
 | `dtu/uptime`                              | R     | Time in seconds since startup                        | seconds                    |
+| `dtu/heap/free`                           | R     | Available heap                                       | Bytes                      |
+| `dtu/heap/size`                           | R     | Total heap size                                      | Bytes                      |
+| `dtu/heap/minfree`                        | R     | Lowest level of free heap since boot                 | Bytes                      |
+| `dtu/heap/maxalloc`                       | R     | Largest block of heap that can be allocated at once  | Bytes                      |
 
 ## Inverter total topics
 
