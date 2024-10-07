@@ -9,6 +9,6 @@
 * Double check that you have a radio module NRF24L01+ with a plus sign at the end. NRF24L01 module without the plus are not compatible with this project.
 * There is no possibility of auto-discovering the inverters. Double check you have entered the serial numbers of the inverters correctly.
 * OpenDTU-OnBattery needs access to a working NTP server to get the current date & time.
-* If your problem persists, check the  [Issues on Github](https://github.com/helgeerbe/OpenDTU-OnBattery/issues){target=_blank}. Please inspect not only the open issues, also the closed issues contain useful information.
-* Another source of information are the [Discussions](https://github.com/helgeerbe/OpenDTU-OnBattery/discussions/){target=_blank}
+* If your problem persists, check the  [Issues on Github](https://github.com/hoylabs/OpenDTU-OnBattery/issues){target=_blank}. Please inspect not only the open issues, also the closed issues contain useful information.
+* Another source of information are the [Discussions](https://github.com/hoylabs/OpenDTU-OnBattery/discussions/){target=_blank}
 * Make sure to connect one inverter only to one DTU (Original, Ahoy, OpenDTU, OpenDTU-OnBattery doesn't make a difference). If you query the same inverter from multiple DTUs you will mess up the communication.

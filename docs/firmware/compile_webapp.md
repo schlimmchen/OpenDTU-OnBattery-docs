@@ -44,7 +44,7 @@ same).
 
 [1]: https://nodejs.org/en/download/prebuilt-installer
 [2]: https://github.com/nodesource/distributions
-[3]: https://github.com/helgeerbe/OpenDTU-OnBattery/blob/development/.github/workflows/build.yml
+[3]: https://github.com/hoylabs/OpenDTU-OnBattery/blob/development/.github/workflows/build.yml
 
 ## Building the WebApp
 

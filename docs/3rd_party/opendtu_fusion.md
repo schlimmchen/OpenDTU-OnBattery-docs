@@ -25,11 +25,11 @@ OpenDTU-OnBattery peripherals such as VE.Direct devices and a Pylontech battery.
 
 Firmware builds for the `generic_esp32s3_usb` variant are available in
 OpenDTU-OnBattery's GitHub [Release
-Page](https://github.com/helgeerbe/OpenDTU-OnBattery/releases).
+Page](https://github.com/hoylabs/OpenDTU-OnBattery/releases).
 
 OpenDTU-OnBattery also ships an OpenDTU Fusion-specific device profile
 (`pin_mapping.json`) in [the code
-repository](https://github.com/helgeerbe/OpenDTU-OnBattery/blob/master/docs/DeviceProfiles/opendtu_fusion.json).
+repository](https://github.com/hoylabs/OpenDTU-OnBattery/blob/master/docs/DeviceProfiles/opendtu_fusion.json).
 
 ## Board Documentation
 

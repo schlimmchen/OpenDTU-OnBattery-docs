@@ -86,6 +86,6 @@ and test features, or offsetting recurring costs like domain registrations.
 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support on ko-fi', '#121317', 'W7W6YT23K');kofiwidget2.draw();</script>
 
 [1]: https://www.hoymiles.com/
-[2]: https://www.github.com/helgeerbe/OpenDTU-OnBattery/discussions
+[2]: https://www.github.com/hoylabs/OpenDTU-OnBattery/discussions
 [3]: https://discord.gg/WzhxEY62mB
 [4]: https://github.com/tbnobody/OpenDTU

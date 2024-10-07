@@ -2,7 +2,7 @@
 
 !!! note "Sample Profiles"
     Ready-to-use device profiles can be found [in the code
-    repository](https://github.com/helgeerbe/OpenDTU-OnBattery/tree/master/docs/DeviceProfiles){target=_blank}.
+    repository](https://github.com/hoylabs/OpenDTU-OnBattery/tree/master/docs/DeviceProfiles){target=_blank}.
 
 ## Summary
 

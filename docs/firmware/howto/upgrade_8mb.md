@@ -31,7 +31,7 @@ type and amount of flash memory).
 
 In case you need to first determine how much flash memory is actually available
 on your board, install [OpenDTU-OnBattery
-2024.06.03](https://github.com/helgeerbe/OpenDTU-OnBattery/releases/tag/2024.06.03)
+2024.06.03](https://github.com/hoylabs/OpenDTU-OnBattery/releases/tag/2024.06.03)
 and navigate to **Info** --> **System** in the web UI. It lists the flash
 memory size in section "Hardware Information".
 
@@ -59,7 +59,7 @@ with 4 MB of flash results in a bootloop.
 
 If you are actually on an ESP32-S3 with 4 MB of flash (should be quite exotic)
 and need a matching firmware image, then [open an
-issue](https://github.com/helgeerbe/OpenDTU-OnBattery/issues). Similar to
+issue](https://github.com/hoylabs/OpenDTU-OnBattery/issues). Similar to
 `generic_esp32_4mb_no_ota` there will be no support for OTA updates and you
 will have to upgrade using a wired connection going forward.
 
@@ -112,7 +112,7 @@ and `generic_esp32` are no longer available.
   layout does, however, fit 4 MB of flash while also accomodating more space
   (the same amount as for devices with &ge;&nbsp;8 MB) for the firmware.
 
-See [#1025](https://github.com/helgeerbe/OpenDTU-OnBattery/issues/1025) for
+See [#1025](https://github.com/hoylabs/OpenDTU-OnBattery/issues/1025) for
 more background information.
 
 ## Exception for ESP32-S3

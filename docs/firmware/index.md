@@ -3,7 +3,7 @@
 ## Download Firmware
 
 The pre-compiled binary files can be found on the GitHub [Releases
-Page](https://github.com/helgeerbe/OpenDTU-OnBattery/releases) (the right
+Page](https://github.com/hoylabs/OpenDTU-OnBattery/releases) (the right
 column on the projects start page). Currently there are pre-compiled binaries
 for ESP32 and ESP32-S3 MCUs.
 

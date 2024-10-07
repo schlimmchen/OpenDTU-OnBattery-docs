@@ -197,7 +197,7 @@ publishing to the respective `cmd` topic has no effect.
 
 Note that, depending on your settings, some of the thresholds might have no
 effect. Refer to the [DPL
-documentation](https://github.com/helgeerbe/OpenDTU-OnBattery/wiki/Dynamic-Power-Limiter)
+documentation](https://github.com/hoylabs/OpenDTU-OnBattery/wiki/Dynamic-Power-Limiter)
 to understand the thresholds.
 
 | Topic                                                              | Limitation |

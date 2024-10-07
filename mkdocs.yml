@@ -1,6 +1,6 @@
-edit_uri: https://github.com/schlimmchen/OpenDTU-OnBattery-docs/edit/main/docs/
+edit_uri: https://github.com/hoylabs/OpenDTU-OnBattery-docs/edit/main/docs/
 
-repo_url: https://github.com/helgeerbe/OpenDTU-OnBattery
+repo_url: https://github.com/hoylabs/OpenDTU-OnBattery
 repo_name: OpenDTU-OnBattery
 
 site_name: OpenDTU-OnBattery Documentation
@@ -11,7 +11,7 @@ copyright: '&copy; 2024 OpenDTU Community &ndash; based on <a href="https://open
 extra:
   social:
     - icon: material/github
-      link: https://github.com/helgeerbe/OpenDTU-OnBattery/discussions
+      link: https://github.com/hoylabs/OpenDTU-OnBattery/discussions
       name: GitHub Discussions
     - icon: fontawesome/brands/discord
       link: https://discord.gg/WzhxEY62mB

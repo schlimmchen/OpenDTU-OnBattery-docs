@@ -11,8 +11,8 @@ The only difference between `opendtu-onbattery-generic.bin` (deprecated) and `op
 ## Migration process
 
 * Make a backup of your configuration! (**Settings** --> **Config Management** --> **Backup** --> Select **config.json** --> Press **Backup**)
-* Download the latest `opendtu-onbattery-generic_esp32.bin` file from the GitHub [Release Page](https://github.com/helgeerbe/OpenDTU-OnBattery/releases){target=_blank}
-* Download [a compatible device profile](https://raw.githubusercontent.com/helgeerbe/OpenDTU-OnBattery/master/docs/DeviceProfiles/nodemcu_esp32.json){target=_blank}. It contains the same pin assignments as the hard-coded ones in `opendtu-onbattery-generic.bin`.
+* Download the latest `opendtu-onbattery-generic_esp32.bin` file from the GitHub [Release Page](https://github.com/hoylabs/OpenDTU-OnBattery/releases){target=_blank}
+* Download [a compatible device profile](https://raw.githubusercontent.com/hoylabs/OpenDTU-OnBattery/master/docs/DeviceProfiles/nodemcu_esp32.json){target=_blank}. It contains the same pin assignments as the hard-coded ones in `opendtu-onbattery-generic.bin`.
 * Upload the device profile. (**Settings** --> **Config Management** --> **Restore** --> Select **Pin Mapping (pin_mapping.json)** --> Select `nodemcu_esp32.json` --> Press **Restore**)
 * The ESP reboots but does nothing different at the moment.
 * Select the new uploaded device profile. This can already be done using the `opendtu-onbattery-generic.bin` firmware. (**Settings** --> **Device-Manager** --> **Selected profile** --> Select `NRF24` --> Press **Save**)

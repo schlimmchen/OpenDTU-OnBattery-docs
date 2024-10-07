@@ -11,7 +11,7 @@
 1. ![Clone Source Code](../assets/images/firmware/vscode_clone.png){align=right}
    Clone the source code repository. Select the `Source Control` tab on the
    left, click `Clone Repository`, and enter the URL
-   `https://github.com/helgeerbe/OpenDTU-OnBattery`. You really have to clone
+   `https://github.com/hoylabs/OpenDTU-OnBattery`. You really have to clone
    the source code repository. Do not download and extract a source ZIP file.
    During the build process the Git hash is embedded into the firmware. If you
    merely download and extract the source ZIP file a build error will occur, as
