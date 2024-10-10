@@ -29,9 +29,11 @@ To initially select or to change a device profile, navigate to **Settings** -->
 profile, the ESP reboots. You can see the current (Active) and the new
 (Selected) pin assignment in the table below the combobox.
 
-The JSON file can contain multiple profiles. Each profile requires a name and
-the respective parameters. If any parameter is not set, the default value `-1`
-("not in use") will be effective.
+The JSON file can contain multiple profiles. Each profile requires a unique
+name and the respective parameters. If any parameter is not set, the default
+value `-1` ("not in use") will be effective. The default value may actually be
+something else if you compile the firmware yourself, in which case it is
+assumed that you know what you are doing.
 
 ## Structure of the JSON file
 
