@@ -1,4 +1,4 @@
-# Using the prometheus database for data collection
+# Using Prometheus for data collection
 
 The prometheus database is used for many projects for data collection. It is relatively easy to setup and use.
 

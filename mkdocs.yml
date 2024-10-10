@@ -182,6 +182,6 @@ nav:
   - 3rd Party:
       - 3rd_party/opendtu_fusion.md
       - 3rd_party/related.md
-      - 3rd_party/cases.md
-      - 3rd_party/pcb.md
-      - 3rd_party/prometheus_database.md
+      - Cases: 3rd_party/cases.md
+      - PCB Layouts: 3rd_party/pcb.md
+      - Using Prometheus: 3rd_party/prometheus_database.md
